@@ -1,0 +1,1 @@
+{"a": {"id": "a", "title": "地酒", "genre": "食品", "method": "レシート", "status": "won"}, "b": {"id": "b", "title": "カニ", "genre": "その他", "method": "アンケート", "status": "lost"}, "c": {"id": "c", "title": "QUO", "genre": "金券", "method": "即時当選", "status": "won"}, "d": {"id": "d", "title": "iPad", "genre": "家電", "method": "ネット", "status": "applied"}}

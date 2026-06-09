@@ -1,0 +1,17 @@
+{
+  "last_name": "山田",
+  "first_name": "花子",
+  "last_kana": "ヤマダ",
+  "first_kana": "ハナコ",
+  "zip": "1000001",
+  "pref": "東京都",
+  "city": "千代田区",
+  "address1": "千代田1-1",
+  "address2": "サンプルマンション101",
+  "tel": "09000000000",
+  "email": "sample@example.com",
+  "birth_year": "1990",
+  "birth_month": "1",
+  "birth_day": "1",
+  "gender": "女性"
+}

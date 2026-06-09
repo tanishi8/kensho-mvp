@@ -1,0 +1,183 @@
+# ============================================================
+# 収集する RSS フィード
+# 確度順に候補を記載。稼働前に find_feeds.py で検証し、
+# 「✅有効」と出たものだけ残すこと（利用規約も要確認）。
+#   python find_feeds.py https://tokaikensyo.com/ https://kensho-everyday.com/ ...
+# ============================================================
+feeds:
+  # --- 確度【高】WordPress製ブログ（/feed/ が標準仕様で取れる可能性大）---
+  - name: おつかいねこの懸賞生活ブログ
+    url: https://tokaikensyo.com/feed/
+  - name: 懸賞主婦
+    url: https://kensho-everyday.com/feed/
+  # --- 観光・宿泊・名産品（実検証済フィード・全国狙い） ---
+  - name: 日本スタンプラリー協会（景品あり多数）
+    url: https://stamprally.org/feed
+  - name: 懸賞ニュース
+    url: https://kensho-news.com/feed/
+  - name: キャンなび（メーカー横断）
+    url: https://camnavi.net/feed/
+  - name: 懸賞CLUB（メーカー横断）
+    url: https://kenshou.club/feed/
+
+  # --- 確度【中】公式にRSS配信を明言（正確なURLはfind_feedsで確定）---
+  # 懸賞当確: トップ https://www.ken-kaku.com/ をfind_feedsに渡してURL確定
+  # - name: 懸賞当確（最新プレゼント）
+  #   url: （find_feedsで確定したURLを記入）
+
+  # --- 確度【中】カテゴリ別フィード（WordPressは /category/xxx/feed/ も可）---
+  # 例: おつかいねこ クローズド懸賞だけ:
+  # - name: おつかいねこ クローズド懸賞
+  #   url: https://tokaikensyo.com/category/sweepstakes/goods/feed/
+
+  # --- 補助 にほんブログ村 懸賞カテゴリ（集約フィード）---
+  # find_feedsで https://money.blogmura.com/kenshou/ を検証して追加
+
+  # --- 確度【低/要確認】独自システム系（RSS無い可能性）---
+  # チャンスイット(chance.com)/懸賞生活(knshow.com)はメルマガ中心。
+  # RSSが無ければ「懸賞専用Gmailでメルマガ購読→toolcで受信処理」で代替。
+
+  # ============================================================
+  # 追加候補（SOURCES_LOCAL.md 実検証版。find_feeds で最終確認後に有効化）
+  # --- メーカー横断まとめ（WordPress・取得許容） ---
+  # - name: キャンなび
+  #   url: https://camnavi.net/feed/
+  # - name: 懸賞CLUB
+  #   url: https://kenshou.club/feed/
+  # --- メーカー公式（確認済キャンペーンRSS） ---
+  # - name: サントリー キャンペーン
+  #   url: https://www.suntory.co.jp/enjoy/campaign/rss.xml
+  # --- 地域・自治体 ---
+  # - name: 懸賞プレゼントキャンペーンPLUS
+  #   url: https://www.social-present.com/feed/
+  # --- プレスリリース（keyword_filter を true にして使う） ---
+  # - name: PR TIMES 全体
+  #   url: https://prtimes.jp/index.rdf
+  # - name: アットプレス 最新
+  #   url: https://www.atpress.ne.jp/rss/index.rdf
+  # --- Googleアラート（自分で作成したRSS URLを貼る） ---
+  # - name: Alert 居住地プレゼント
+  #   url: https://www.google.com/alerts/feeds/＜ID＞/＜ID＞
+  # --- 好みジャンルのGoogleアラート（ALERTS.md参照。作成したRSS URLを貼る） ---
+  # - name: Alert 日本酒・地酒
+  #   url: https://www.google.com/alerts/feeds/＜ID＞/＜ID＞
+  # - name: Alert 海産物・カニ・牡蠣
+  #   url: https://www.google.com/alerts/feeds/＜ID＞/＜ID＞
+  # - name: Alert 特産品・ご当地グルメ
+  #   url: https://www.google.com/alerts/feeds/＜ID＞/＜ID＞
+  # ※アラート由来はノイズが多いので keyword_filter: enabled を true にする
+  # --- 自治体・地域（SOURCES_GOV.md。keyword_filter併用推奨） ---
+  # - name: 日本スタンプラリー協会（景品あり・RSS確認済）
+  #   url: https://stamprally.org/feed
+  # - name: （居住地の自治体トップをfind_feedsで確定して追加）
+  #   url: 
+
+scoring:
+  # 応募方式ごとの当選確率係数（調査の実測当選率に基づく相対値）
+  method_weight:
+    クローズド: 0.19
+    レシート: 0.19
+    スタンプラリー: 0.12
+    アンケート: 0.15
+    instagram: 0.185
+    はがき: 0.143
+    ネット: 0.165
+    メール: 0.165
+    即時当選: 0.03
+    x: 0.01
+    不明: 0.05
+  # 当選本数によるボーナス（多いほど当たりやすい）
+  win_count_bonus:
+    - { min: 1001, factor: 1.3 }
+    - { min: 101,  factor: 1.2 }
+    - { min: 11,   factor: 1.1 }
+    - { min: 1,    factor: 1.0 }
+  # 地域限定・協賛・手動抽選などのボーナス
+  local_bonus: 1.7
+  manual_lottery_bonus: 1.2
+  december_bonus: 1.2
+  # ジャンル別の必要度係数（生活必需品・旅行を高く）
+  need_factor:
+    現金: 1.5
+    金券: 1.4
+    食品: 1.3
+    日用品: 1.3
+    旅行: 1.4
+    家電: 1.2
+    その他: 1.0
+
+# 通知する上位件数
+notify_top_n: 15
+
+# 状態ファイル（既出懸賞の重複通知を防ぐ）
+seen_db: seen.json
+
+# LLM二次抽出（正規表現で取り切れない曖昧表現を補完）
+# provider: gemini | claude | none（none=正規表現のみ・完全無料）
+# APIキーは環境変数で渡す: GEMINI_API_KEY または ANTHROPIC_API_KEY
+llm:
+  provider: gemini
+  # モデル（2026-06時点）。2.5系は2026/10/16終了予定→その後は3.1-flash-lite等へ変更
+  #   gemini-2.5-flash-lite（低コスト・無料枠大）/ gemini-3.1-flash-lite（長寿命後継）/ gemini-3.5-flash（高性能）
+  model: gemini-2.5-flash-lite
+
+# ノイズの多いソース（PR TIMES/Googleアラート等）向けの懸賞キーワードフィルタ。
+# enabled=true のとき、タイトル/本文にいずれかの語を含むものだけを通す。
+keyword_filter:
+  enabled: false
+  any_of:
+    - 当選
+    - 賞品
+    - プレゼント
+    - キャンペーン
+    - 懸賞
+    - モニター
+    - 抽選
+    - 当たる
+
+# 応募コスト推定（利益率＝期待価値÷コスト の計算に使用。cost.py）
+cost:
+  # 普段買う商品キーワード（一致するクローズド懸賞は追加コストを0扱い＝高利益率）
+  buy_list:
+    - 牛乳
+    - ヨーグルト
+    - コーヒー
+    - 食パン
+    - 洗剤
+    - ビール
+  routine_purchase_cost: 0      # 普段買う商品なら追加コスト0
+  default_purchase_cost: 500    # 買い増しが必要なクローズドの想定購入額
+  # 方式別の時間コスト（円換算）を上書きしたい場合はここに記載
+  # time_cost: { はがき: 50 }
+
+# 並び順: score（期待価値順） or roi（利益率順）
+rank_by: roi
+
+# 好みジャンルの加点（地酒・海産物・食品・特産品を狙う。賞品名/本文に含むとスコア加点）
+# 既存スコアに preference_bonus を上乗せする（該当しなければ1.0=影響なし）
+preference:
+  enabled: true
+  bonus: 1.5            # 好みに一致したときの倍率
+  keywords:
+    - 日本酒
+    - 地酒
+    - 焼酎
+    - ビール
+    - ワイン
+    - 海産
+    - 海鮮
+    - 魚介
+    - カニ
+    - 蟹
+    - ホタテ
+    - 牡蠣
+    - うに
+    - いくら
+    - 和牛
+    - 肉
+    - 果物
+    - フルーツ
+    - 米
+    - 特産
+    - 名産
+    - ご当地

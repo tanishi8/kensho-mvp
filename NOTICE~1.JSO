@@ -1,0 +1,32 @@
+[
+  {
+    "channel":"mail","sender_id":"info@suntory.co.jp","sender_domain":"suntory.co.jp",
+    "display_name":"サントリー懸賞事務局","subject":"【ご当選】サントリー QUOカードPay懸賞のお知らせ",
+    "body":"この度はご応募ありがとうございました。厳正な抽選の結果、ご当選されました。賞品の発送のためお届け先住所をご登録ください。",
+    "auth":{"spf":"pass","dkim":"pass","dmarc":"pass"},"organizer":"サントリー","campaign":"サントリー QUOカードPay懸賞"
+  },
+  {
+    "channel":"mail","sender_id":"info@suntory-prize.xyz","sender_domain":"suntory-prize.xyz",
+    "display_name":"サントリー懸賞事務局","subject":"【当選通知】高額当選しました",
+    "body":"おめでとうございます。賞品発送には送料が必要です。クレジットカード番号を入力してください。",
+    "auth":{"spf":"fail","dkim":"none","dmarc":"fail"},"organizer":"サントリー","campaign":"サントリー QUOカードPay懸賞"
+  },
+  {
+    "channel":"mail","sender_id":"win@unknown-lottery.com","sender_domain":"unknown-lottery.com",
+    "display_name":"懸賞当選センター","subject":"あなたは高額当選しました！",
+    "body":"おめでとうございます。受け取りはLINEで友だち追加して、24時間以内に手数料をお振込みください。",
+    "auth":{"spf":"fail","dkim":"fail","dmarc":"fail"},"organizer":"不明","campaign":"不明"
+  },
+  {
+    "channel":"sns","sender_id":"@city_kanko_jp","sender_domain":"",
+    "display_name":"○○市観光協会","verified":"gold",
+    "subject":"【当選】温泉ペア宿泊券","body":"ご当選おめでとうございます。お届け先をDMでお知らせください。",
+    "organizer":"○○市観光協会","campaign":"温泉ペア宿泊券"
+  },
+  {
+    "channel":"sns","sender_id":"@city__kanko","sender_domain":"",
+    "display_name":"○○市観光協会","verified":"blue",
+    "subject":"【当選】温泉ペア宿泊券に当選","body":"当選しました。下記URLから個人情報を入力してください bit.ly/xxxx",
+    "organizer":"○○市観光協会","campaign":"温泉ペア宿泊券"
+  }
+]

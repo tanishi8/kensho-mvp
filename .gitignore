@@ -1,0 +1,8 @@
+seen.json
+__pycache__/
+*.pyc
+.env
+# applog.json は運用環境で育てる。共有したくなければ無視
+profile.json
+whitelist.json
+notices_sample.json
