@@ -53,7 +53,8 @@
 - システムはRSSを読む設計。新ソースも「RSS化」できれば config.yaml に1行追加で取り込める。
 - **検証済み稼働フィード（config有効化済）**：
   懸賞主婦 kensho-everyday.com/feed、おつかいねこ tokaikensyo.com/feed、日本スタンプラリー協会 stamprally.org/feed、懸賞ニュース kensho-news.com/feed、キャンなび camnavi.net/feed（メーカー横断）、懸賞CLUB kenshou.club/feed（メーカー横断）。
-- **無効だったもの**：せとうちDMO、social-present（find_feedsで0件）。
+- **無効だったもの**：せとうちDMO、social-present（RSS無し/0件）。
+- 【2026-06-09 再検証】自治体の本命＝**懸賞ニュースのカテゴリ別RSS**（国内旅行/宿泊券/旅行券＝自治体・観光団体の懸賞）を追加。官公庁公式RSSは行政募集ノイズばかりで不向き→不採用(大阪市削除)。マイ広報紙は規約NG。スクレイパー内包は非推奨（RSS集約をコアに、必要時のみ厳格ガード付きアダプタ）。全国の自治体補完はGoogleアラートが本命。
 - **取得経路の全体像**（SOURCES.md / SOURCES_LOCAL.md / SOURCES_GOV.md / SOURCES_TRAVEL.md / ALERTS.md に詳細）：
   ①集約まとめサイト ②Googleアラート（自治体・好みジャンルの主力。要ユーザー作成）③メーカー公式/メルマガ ④PR TIMES/@Press（開始直後捕捉・keyword_filter併用）⑤自治体公式RSS（大阪/福岡/札幌/徳島/愛知/栃木等のCMS別パターン・全件流れるのでkeyword_filter必須）⑥スタンプラリー協会。
 - **使ってはいけない**：懸賞生活 knshow.com（robots.txtでAIボット全面拒否＋503）。官公庁RSSは個人利用限定（再配布禁止）。

@@ -15,6 +15,13 @@ feeds:
     url: https://stamprally.org/feed
   - name: 懸賞ニュース
     url: https://kensho-news.com/feed/
+  # --- 観光・自治体・特産（懸賞ニュースのカテゴリ別＝全国の自治体/観光団体の懸賞） ---
+  - name: 懸賞ニュース 国内旅行
+    url: https://kensho-news.com/category/domestic-travel/feed/
+  - name: 懸賞ニュース 宿泊券
+    url: https://kensho-news.com/category/accommodation-voucher/feed/
+  - name: 懸賞ニュース 旅行券
+    url: https://kensho-news.com/category/travel-voucher/feed/
   - name: キャンなび（メーカー横断）
     url: https://camnavi.net/feed/
   - name: 懸賞CLUB（メーカー横断）
@@ -22,9 +29,6 @@ feeds:
   # --- メーカー・サンプル系（WordPress・RSS稼働確認済） ---
   - name: お得マニア（メーカー/無料サンプル）
     url: https://otokuchin.com/feed/
-  # --- 自治体公式（全件配信・keyword_filterで懸賞語に絞る／在住限定に注意） ---
-  - name: 大阪市 新着（自治体・要キーワード絞り）
-    url: https://www.city.osaka.lg.jp/main/rss/rss_new.xml
 
   # --- 確度【中】公式にRSS配信を明言（正確なURLはfind_feedsで確定）---
   # 懸賞当確: トップ https://www.ken-kaku.com/ をfind_feedsに渡してURL確定
