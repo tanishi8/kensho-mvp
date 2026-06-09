@@ -12,6 +12,7 @@ import yaml
 
 import extract
 import llm_extract
+import feedutil
 import score
 import notify
 
@@ -44,7 +45,7 @@ def collect(feeds):
         raise RuntimeError("feedparser 未インストール: pip install feedparser")
     items = []
     for feed in feeds:
-        d = feedparser.parse(feed["url"])
+        d = feedutil.parse(feed["url"])
         for e in d.entries:
             items.append({
                 "title": e.get("title", "").strip(),

@@ -19,6 +19,7 @@ import yaml
 
 import extract
 import llm_extract
+import feedutil
 import score
 import gate
 import applog
@@ -39,8 +40,8 @@ def load_cfg(path="config.yaml"):
 
 def collect(cfg, sample=None):
     items = []
-    feeds = [(sample, feedparser.parse(sample))] if sample else \
-            [(f["url"], feedparser.parse(f["url"])) for f in cfg["feeds"]]
+    feeds = [(sample, feedutil.parse(sample))] if sample else \
+            [(f["url"], feedutil.parse(f["url"])) for f in cfg["feeds"]]
     for src, d in feeds:
         for e in d.entries:
             _t = e.get("title", ""); _s = e.get("summary", "") or e.get("description", "")

@@ -16,6 +16,7 @@ import yaml
 
 import extract
 import llm_extract
+import feedutil
 import score
 import applog
 import comment
@@ -34,10 +35,10 @@ def load_cfg(path="config.yaml"):
 def collect_and_score(cfg, sample=None):
     items = []
     if sample:
-        d = feedparser.parse(sample)
+        d = feedutil.parse(sample)
         feeds = [(sample, d)]
     else:
-        feeds = [(f["url"], feedparser.parse(f["url"])) for f in cfg["feeds"]]
+        feeds = [(f["url"], feedutil.parse(f["url"])) for f in cfg["feeds"]]
     for src, d in feeds:
         for e in d.entries:
             raw = {"title": e.get("title", "").strip(),
