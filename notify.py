@@ -38,7 +38,7 @@ def send(items, top_n=15):
     for chunk in _split(msg, 1900):
         data = json.dumps({"content": chunk}).encode("utf-8")
         req = urllib.request.Request(
-            url, data=data, headers={"Content-Type": "application/json"})
+            url, data=data, headers={"Content-Type": "application/json", "User-Agent": "kensho-mvp/1.0 (+https://github.com)"})
         urllib.request.urlopen(req, timeout=15)
     return True
 
@@ -90,6 +90,6 @@ def send_summary(items, top_n=5):
         return False
     for chunk in _split(msg, 1900):
         data = json.dumps({"content": chunk}).encode("utf-8")
-        req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json"})
+        req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json", "User-Agent": "kensho-mvp/1.0 (+https://github.com)"})
         urllib.request.urlopen(req, timeout=15)
     return True
