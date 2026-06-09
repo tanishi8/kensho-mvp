@@ -1,0 +1,13 @@
+
+=== https://stamprally.org/ ===
+Traceback (most recent call last):
+  File "C:\Users\kanta\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\local-agent-mode-sessions\2f2edaa3-c10a-459e-b933-83acd320c9a7\1d5a6576-caeb-43c8-a7e8-27dbe4578e4c\local_92b24d09-433a-414d-a753-efe15a0bb40c\outputs\kensho-mvp\find_feeds.py", line 114, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\kanta\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\local-agent-mode-sessions\2f2edaa3-c10a-459e-b933-83acd320c9a7\1d5a6576-caeb-43c8-a7e8-27dbe4578e4c\local_92b24d09-433a-414d-a753-efe15a0bb40c\outputs\kensho-mvp\find_feeds.py", line 102, in main
+    all_valid += [(site, u) for u in discover(site)]
+                                     ~~~~~~~~^^^^^^
+  File "C:\Users\kanta\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\local-agent-mode-sessions\2f2edaa3-c10a-459e-b933-83acd320c9a7\1d5a6576-caeb-43c8-a7e8-27dbe4578e4c\local_92b24d09-433a-414d-a753-efe15a0bb40c\outputs\kensho-mvp\find_feeds.py", line 84, in discover
+    print(f"  \u2705 有効 ({n}件): {c}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'cp932' codec can't encode character '\u2705' in position 2: illegal multibyte sequence
