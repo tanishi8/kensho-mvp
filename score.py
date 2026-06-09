@@ -48,6 +48,10 @@ def score(item, cfg):
 
     value = item.get("prize_value") or FALLBACK_VALUE.get(genre, 1500)
     cash = CASH_RATE.get(genre, 0.4)
+    # cash_weight(0〜1)で換金率の効きを調整。小さいほど換金性の差が縮まり、
+    # 食品・特産・旅行(換金率低)が金券に埋もれにくくなる。既定0.5。
+    cw = sc.get("cash_weight", 1.0)
+    cash_eff = cash ** cw
     need = sc["need_factor"].get(genre, sc["need_factor"]["その他"])
 
     factor = win_count_factor(item.get("win_count"), sc["win_count_bonus"])
@@ -70,7 +74,7 @@ def score(item, cfg):
     # 価値は対数で圧縮（高額賞品が支配的になりすぎないように）
     value_term = math.log10(max(value, 1) + 10)
 
-    expected = prob * value_term * cash * need * factor
+    expected = prob * value_term * cash_eff * need * factor
     item["score"] = round(expected, 3)
 
     # 利益率（期待価値 ÷ コスト）
@@ -80,7 +84,7 @@ def score(item, cfg):
 
     item["score_breakdown"] = {
         "prob": prob, "value": value, "cash_rate": cash,
-        "need": need, "factor": round(factor, 3), "cost": c,
+        "need": need, "cash_eff": round(cash_eff,3), "factor": round(factor, 3), "cost": c,
         "preference_hit": item["preference_hit"],
     }
     return item

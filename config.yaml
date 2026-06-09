@@ -19,6 +19,12 @@ feeds:
     url: https://camnavi.net/feed/
   - name: 懸賞CLUB（メーカー横断）
     url: https://kenshou.club/feed/
+  # --- メーカー・サンプル系（WordPress・RSS稼働確認済） ---
+  - name: お得マニア（メーカー/無料サンプル）
+    url: https://otokuchin.com/feed/
+  # --- 自治体公式（全件配信・keyword_filterで懸賞語に絞る／在住限定に注意） ---
+  - name: 大阪市 新着（自治体・要キーワード絞り）
+    url: https://www.city.osaka.lg.jp/main/rss/rss_new.xml
 
   # --- 確度【中】公式にRSS配信を明言（正確なURLはfind_feedsで確定）---
   # 懸賞当確: トップ https://www.ken-kaku.com/ をfind_feedsに渡してURL確定
@@ -73,6 +79,8 @@ feeds:
   #   url: 
 
 scoring:
+  # 換金率の効き(0〜1)。0.5で食品/特産/旅行が金券に埋もれにくい(実用・地域重視)
+  cash_weight: 0.5
   # 応募方式ごとの当選確率係数（調査の実測当選率に基づく相対値）
   method_weight:
     クローズド: 0.19
@@ -93,16 +101,16 @@ scoring:
     - { min: 11,   factor: 1.1 }
     - { min: 1,    factor: 1.0 }
   # 地域限定・協賛・手動抽選などのボーナス
-  local_bonus: 1.7
-  manual_lottery_bonus: 1.2
+  local_bonus: 1.8
+  manual_lottery_bonus: 1.4
   december_bonus: 1.2
   # ジャンル別の必要度係数（生活必需品・旅行を高く）
   need_factor:
     現金: 1.5
     金券: 1.4
-    食品: 1.3
+    食品: 1.4
     日用品: 1.3
-    旅行: 1.4
+    旅行: 1.6
     家電: 1.2
     その他: 1.0
 
@@ -124,7 +132,7 @@ llm:
 # ノイズの多いソース（PR TIMES/Googleアラート等）向けの懸賞キーワードフィルタ。
 # enabled=true のとき、タイトル/本文にいずれかの語を含むものだけを通す。
 keyword_filter:
-  enabled: false
+  enabled: true
   any_of:
     - 当選
     - 賞品
@@ -157,7 +165,7 @@ rank_by: roi
 # 既存スコアに preference_bonus を上乗せする（該当しなければ1.0=影響なし）
 preference:
   enabled: true
-  bonus: 1.5            # 好みに一致したときの倍率
+  bonus: 1.8            # 好みに一致したときの倍率
   keywords:
     - 日本酒
     - 地酒
