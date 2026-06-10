@@ -57,28 +57,53 @@ def _split(text, limit):
 
 
 def build_summary(items, top_n=5):
-    """その日の新着を要約（件数・好みヒット・締切近・高ROI上位）。"""
+    """その日の新着を要約。利益率TOP＋カテゴリ専用セクション（観光/自治体/好み）で
+    件数の多いサンプル系に埋もれないようにする。"""
     import datetime
     total = len(items)
     pref = [it for it in items if it.get("preference_hit")]
-    manual = [it for it in items if it.get("manual_lottery")]
+    travel = [it for it in items if it.get("genre") == "旅行"]
+    local_manual = [it for it in items if it.get("local") or it.get("manual_lottery")]
     top = sorted(items, key=lambda x: x.get("roi", 0), reverse=True)[:top_n]
 
-    lines = [f"**📋 懸賞デイリーサマリー {datetime.date.today().isoformat()}**",
-             f"新着 {total}件 / 好み一致 {len(pref)}件 / 手動抽選 {len(manual)}件", ""]
-    lines.append(f"**🏆 利益率TOP{min(top_n, total)}**")
-    for i, it in enumerate(top, 1):
-        mark = "★" if it.get("preference_hit") else ""
+    def line(it):
         wc = it.get("win_count")
         wc_s = f"{wc:,}名" if wc else "本数不明"
-        lines.append(f"{i}.{mark} {it['title'][:48]}")
-        lines.append(f"   roi:{it.get('roi','?')} / {it.get('genre','')} / {wc_s} / {it.get('link','')}")
+        mk = "★" if it.get("preference_hit") else ""
+        return f"・{mk}{it['title'][:46]}  ({it.get('genre','')}/{wc_s})\n   {it.get('link','')}"
+
+    L = [f"**📋 懸賞デイリーサマリー {datetime.date.today().isoformat()}**",
+         f"新着 {total}件 / 好み {len(pref)} / 観光・宿泊 {len(travel)} / 自治体・手動抽選 {len(local_manual)}", ""]
+    L.append(f"**🏆 利益率TOP{min(top_n, total)}**")
+    for i, it in enumerate(top, 1):
+        mk = "★" if it.get("preference_hit") else ""
+        wc = it.get("win_count"); wc_s = f"{wc:,}名" if wc else "本数不明"
+        L.append(f"{i}.{mk} {it['title'][:46]}  (roi:{it.get('roi','?')}/{it.get('genre','')}/{wc_s})")
+        L.append(f"   {it.get('link','')}")
+    # カテゴリ専用セクション（あるときだけ表示）
+    if travel:
+        L.append(""); L.append(f"**🏞 観光・宿泊・旅行 {len(travel)}件**")
+        for it in sorted(travel, key=lambda x:-x.get("roi",0))[:5]: L.append(line(it))
+    if local_manual:
+        L.append(""); L.append(f"**🏛 自治体・地域・手動抽選 {len(local_manual)}件**")
+        for it in sorted(local_manual, key=lambda x:-x.get("roi",0))[:5]: L.append(line(it))
     if pref:
-        lines.append("")
-        lines.append(f"**🍶 好み一致（地酒・海産物等）{len(pref)}件**")
-        for it in pref[:5]:
-            lines.append(f"・{it['title'][:48]} … {it.get('link','')}")
-    return "\n".join(lines)
+        L.append(""); L.append(f"**🍶 好み（地酒・海産物・特産品等）{len(pref)}件**")
+        for it in pref[:5]: L.append(line(it))
+    # 常設・定期の懸賞（watchlist.yaml）を「今日も応募できる」として常時表示
+    try:
+        import os, yaml
+        if os.path.exists("watchlist.yaml"):
+            wl = (yaml.safe_load(open("watchlist.yaml", encoding="utf-8")) or {}).get("watch", [])
+            if wl:
+                L.append(""); L.append(f"**\U0001F501 常設・定期懸賞（今日も応募可）{len(wl)}件**")
+                for w in wl:
+                    cad = {"monthly":"毎月","weekly":"毎週","anytime":"随時"}.get(w.get("cadence",""), "")
+                    L.append(f"・{w.get('name','')[:46]}（{w.get('genre','')}/{cad}）")
+                    L.append(f"   {w.get('url','')}")
+    except Exception:
+        pass
+    return "\n".join(L)
 
 
 def send_summary(items, top_n=5):

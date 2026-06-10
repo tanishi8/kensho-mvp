@@ -1,0 +1,27 @@
+# 常設・定期の懸賞ウォッチリスト（低競争・良い商品を継続的に狙う）
+# まとめサイトに載りにくい「観光協会の常設アンケート懸賞」等を手動で登録。
+# 毎日のサマリーで「今日も応募できる常設懸賞」として表示される。
+# ※URL/内容は必ず自分で確認して編集すること（実在・応募条件・在住制限）。
+#   cadence: monthly=毎月応募可 / weekly / anytime=随時
+watch:
+  - name: ホテルエピナール那須 プレゼントクイズ（ペア宿泊券）
+    url: https://www.epinard.jp/presentquiz/
+    genre: 旅行
+    cadence: monthly
+    note: 毎月クイズ・1泊2食ペア宿泊券。要確認
+  - name: 伊豆網代温泉 観光協会 アンケート（ペア宿泊券）
+    url: https://ajirospa.com/
+    genre: 旅行
+    cadence: monthly
+    note: 毎月1組ペア無料宿泊券。要確認
+  - name: 那須温泉旅館協同組合 プレゼント（宿泊クーポン）
+    url: https://www.nasuonsen.com/present/
+    genre: 旅行
+    cadence: anytime
+    note: 宿泊クーポン1万円分×5組。要確認
+  # ↓ 自分で見つけた常設懸賞を追記（観光協会・酒蔵・特産品メーカー等）
+  # - name: ○○観光協会 アンケート懸賞
+  #   url: https://example.com/present/
+  #   genre: 旅行
+  #   cadence: monthly
+  #   note: 

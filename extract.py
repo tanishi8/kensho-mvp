@@ -116,7 +116,21 @@ def extract(title, summary=""):
     }
 
 
-def is_sweepstakes(title, summary, keywords):
-    """ノイズ除去用: タイトル/本文に懸賞キーワードを含むか。"""
+# 既定の除外語（宝くじ結果・当選番号・まとめ/比較記事・終了案件等のノイズ）。
+# 呼び出し側が exclude を渡さなくても、この既定で弾く。
+DEFAULT_EXCLUDE = [
+    "当選番号", "当せん番号", "抽せん結果", "抽選結果", "当選発表", "当選者発表",
+    "当選者一覧", "結果発表", "当選報告", "ランキング", "まとめ", "比較", "とは",
+    "速報", "値上げ", "終了しました", "受付終了", "締切ました",
+]
+
+
+def is_sweepstakes(title, summary, keywords, exclude=None):
+    """応募機会だけを通す。keywords(any_of)を1つ以上含み、exclude(none_of)を
+    1つも含まない場合のみ True。exclude未指定なら DEFAULT_EXCLUDE を使う。"""
+    if exclude is None:
+        exclude = DEFAULT_EXCLUDE
     text = f"{title} {summary}"
+    if exclude and any(x in text for x in exclude):
+        return False
     return any(k in text for k in keywords)
