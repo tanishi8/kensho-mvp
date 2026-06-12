@@ -5,7 +5,53 @@ DISCORD_WEBHOOK_URL が未設定なら標準出力にフォールバック（ロ
 import json
 import os
 import urllib.request
+try:
+    import resolve
+except Exception:
+    resolve = None
 
+
+
+def _blocked_domains():
+    """config.yaml の block_domains（不要なまとめサイト等）を読む。"""
+    try:
+        import os, yaml
+        if os.path.exists("config.yaml"):
+            return [d.lower() for d in (yaml.safe_load(open("config.yaml", encoding="utf-8")) or {}).get("block_domains", []) if d]
+    except Exception:
+        pass
+    return []
+
+
+def _resolve_links(items):
+    """config.resolve_links が真なら、各itemのlinkを本応募URLに解決。"""
+    try:
+        import os, yaml
+        cfg = yaml.safe_load(open("config.yaml", encoding="utf-8")) if os.path.exists("config.yaml") else {}
+    except Exception:
+        cfg = {}
+    if not cfg.get("resolve_links") or resolve is None:
+        return items
+    for it in items:
+        try:
+            it["link"] = resolve.resolve(it.get("link", ""))
+        except Exception:
+            pass
+    return items
+
+
+def _filter_blocked(items):
+    """linkのドメインがブロックリストに含まれる項目を除外。"""
+    bl = _blocked_domains()
+    if not bl:
+        return items
+    out = []
+    for it in items:
+        link = (it.get("link") or "").lower()
+        if any(d in link for d in bl):
+            continue
+        out.append(it)
+    return out
 
 def build_message(items, top_n=15):
     lines = ["**🎯 本日の狙い目懸賞 TOP{}**".format(min(top_n, len(items)))]
@@ -28,6 +74,7 @@ def build_message(items, top_n=15):
 
 
 def send(items, top_n=15):
+    items = _resolve_links(_filter_blocked(items))
     msg = build_message(items, top_n)
     url = os.environ.get("DISCORD_WEBHOOK_URL")
     if not url:
@@ -107,6 +154,7 @@ def build_summary(items, top_n=5):
 
 
 def send_summary(items, top_n=5):
+    items = _resolve_links(_filter_blocked(items))
     msg = build_summary(items, top_n)
     url = os.environ.get("DISCORD_WEBHOOK_URL")
     if not url:

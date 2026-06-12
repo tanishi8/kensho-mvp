@@ -25,3 +25,18 @@ watch:
   #   genre: 旅行
   #   cadence: monthly
   #   note: 
+
+# 直接監視するページ（pagewatch.py が巡回。発信源を直接見て低競争案件を捕まえる）
+# ※自分で確認した観光協会・自治体・地方メディアのキャンペーン一覧ページを登録。
+#   robots.txt/規約を尊重し少数に絞ること。
+pages:
+  # --- 観光協会・自治体のキャンペーン/お知らせ一覧 ---
+  # - name: ○○県観光連盟 キャンペーン一覧
+  #   url: https://example-kankou.jp/campaign/
+  # - name: △△市 観光協会 お知らせ
+  #   url: https://example-city-kankou.jp/news/
+  # --- 地方メディア（地方紙・タウン誌・地方放送局のキャンペーンページ）---
+  # - name: □□タウン誌 プレゼント
+  #   url: https://example-townmag.jp/present/
+  # - name: ◇◇テレビ プレゼント
+  #   url: https://example-tv.co.jp/present/

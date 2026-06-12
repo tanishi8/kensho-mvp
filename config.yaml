@@ -215,3 +215,16 @@ preference:
     - 特産
     - 名産
     - ご当地
+
+# 除外したいドメイン（Googleアラート等に混じる不要なまとめサイト）。
+# linkにこのドメインを含む項目は通知しない。
+# ※自分が収集に使っているフィードのドメイン（kensho-news.com 等）は入れないこと。
+block_domains:
+  - chance.com
+  - fruitmail.net
+  - dreammail.jp
+  # 通知を見て不要なまとめサイトが混じったら、そのドメインをここに追記
+
+# 通知時に、まとめ記事URLを「本当の応募ページ(主催者公式)URL」に解決する。
+# Googleアラートの転送URL展開＋まとめ記事内の応募リンク抽出。失敗時は元URLのまま。
+resolve_links: true
