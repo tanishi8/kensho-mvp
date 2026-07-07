@@ -86,8 +86,23 @@ def detect_genre(text):
     return "その他"
 
 
+# 「その場で当たる」等より優先してSNS/LINE系を人間対応(x)へ回す強シグナル
+SNS_STRONG = ["x懸賞", "xキャンペーン", "ｘ懸賞", "ｘキャンペーン",
+              "line懸賞", "lineキャンペーン",
+              "リポスト", "リツイート", "フォロー&リポスト", "フォロー＆リポスト",
+              "rt&フォロー", "フォロー&フォロー"]
+# まとめ/一覧記事（応募先ではない）を方式不明にして人間確認へ回す
+LISTING_HINTS = ["懸賞情報", "毎日更新", "新着情報", "懸賞ブログ", "当選人数が多い"]
+
+
 def detect_method(text):
     t = text.lower()
+    # SNS/LINE は最優先で人間対応(x)。「即時当選」語での誤autoを防ぐ
+    if any(k in t for k in SNS_STRONG):
+        return "x"
+    # まとめ/一覧記事は方式不明（gateでescalate＝人間確認）
+    if any(h in text for h in LISTING_HINTS):
+        return "不明"
     for method, kws in METHOD_KEYWORDS.items():
         if any(k.lower() in t for k in kws):
             return method
