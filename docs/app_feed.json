@@ -1,0 +1,233 @@
+{
+  "generated_at": "2026-07-07T06:57:02.735644+00:00",
+  "rank_by": "roi",
+  "count": 7,
+  "items": [
+    {
+      "id": "2b26873a1386",
+      "title": "最新ゲーム機を抽選で1名様にプレゼント",
+      "link": "https://example.com/5",
+      "source": "sample",
+      "method": "ネット",
+      "genre": "家電",
+      "win_count": 1,
+      "prize_value": null,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.66,
+      "roi": 0.066,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
+      "comment_suggestions": [
+        "購入を検討していた商品で、口コミも参考にしていました。当選しましたら毎日の生活がより快適になりそうで楽しみです。",
+        "この機能が暮らしにぴったりだと感じています。当選しましたら古くなった家電の買い替えを考えていたので嬉しいです。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://example.com/5",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "0f517c94f721",
+      "title": "Amazonギフト券500円分が当たる毎日応募キャンペーン",
+      "link": "https://example.com/6",
+      "source": "sample",
+      "method": "即時当選",
+      "genre": "金券",
+      "win_count": null,
+      "prize_value": 500,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.109,
+      "roi": 0.0545,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "即時当選（自動抽選）：コメントは無効。数を回すことを優先。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://example.com/6",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "5174d6d74ab4",
+      "title": "新作スイーツ詰め合わせ その場で当たる!2,000名様",
+      "link": "https://example.com/4",
+      "source": "sample",
+      "method": "即時当選",
+      "genre": "食品",
+      "win_count": 2000,
+      "prize_value": null,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.095,
+      "roi": 0.0475,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "即時当選（自動抽選）：コメントは無効。数を回すことを優先。",
+      "comment_suggestions": [
+        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
+        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://example.com/4",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "83407d40a398",
+      "title": "【現金10万円】当たる!フォロー&リポストキャンペーン",
+      "link": "https://example.com/1",
+      "source": "sample",
+      "method": "x",
+      "genre": "現金",
+      "win_count": 1,
+      "prize_value": 100000,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.075,
+      "roi": 0.0375,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "X拡散型：自動抽選が多くコメント効果は限定的。引用RTで具体的に書くと手動抽選時に有利。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら家族との時間や日々の生活費の足しにさせていただきたいです。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら前から欲しかったものの購入資金にしたいです。"
+      ],
+      "sns": {
+        "platform": "x",
+        "label": "Xで開く（RT/フォロー）",
+        "open_url": "https://x.com/search?q=%E3%80%90%E7%8F%BE%E9%87%9110%E4%B8%87%E5%86%86%E3%80%91%E5%BD%93%E3%81%9F%E3%82%8B%21%E3%83%95%E3%82%A9%E3%83%AD%E3%83%BC%26%E3%83%AA%E3%83%9D%E3%82%B9%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3&f=live",
+        "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
+      }
+    },
+    {
+      "id": "89daa3898ad4",
+      "title": "△△市 商工会 タウン誌読者プレゼント 温泉ペア宿泊券",
+      "link": "https://example.com/7",
+      "source": "sample",
+      "method": "不明",
+      "genre": "旅行",
+      "win_count": null,
+      "prize_value": null,
+      "manual_lottery": true,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.372,
+      "roi": 0.0372,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "手動抽選：コメントが当落に効きやすい。具体的に書くこと推奨。",
+      "comment_suggestions": [
+        "この地域にずっと行ってみたいと思っていました。当選しましたらなかなか行けなかった家族旅行を実現したいです。",
+        "ご当地の魅力に以前から惹かれていました。当選しましたら日頃の疲れを癒やすご褒美の時間にしたいです。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://example.com/7",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "8842c4c8f101",
+      "title": "○○県在住の方限定!地元スーパー共同企画 お米5kgを100名様に",
+      "link": "https://example.com/3",
+      "source": "sample",
+      "method": "はがき",
+      "genre": "食品",
+      "win_count": 100,
+      "prize_value": null,
+      "manual_lottery": true,
+      "local": true,
+      "preference_hit": true,
+      "score": 1.739,
+      "roi": 0.0139,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "手動抽選：コメントが当落に効きやすい。具体的に書くこと推奨。",
+      "comment_suggestions": [
+        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
+        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://example.com/3",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "9134c68f37c0",
+      "title": "QUOカード1,000円分を500名様にプレゼント(レシート応募)",
+      "link": "https://example.com/2",
+      "source": "sample",
+      "method": "レシート",
+      "genre": "金券",
+      "win_count": 500,
+      "prize_value": 1000,
+      "manual_lottery": true,
+      "local": false,
+      "preference_hit": false,
+      "score": 1.288,
+      "roi": 0.0025,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "手動抽選：コメントが当落に効きやすい。具体的に書くこと推奨。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://example.com/2",
+        "action": "応募フォーム/ページを開く"
+      }
+    }
+  ],
+  "watch": [
+    {
+      "name": "ホテルエピナール那須 プレゼントクイズ（ペア宿泊券）",
+      "url": "https://www.epinard.jp/presentquiz/",
+      "genre": "旅行",
+      "cadence": "monthly",
+      "note": "毎月クイズ・1泊2食ペア宿泊券。要確認"
+    },
+    {
+      "name": "伊豆網代温泉 観光協会 アンケート（ペア宿泊券）",
+      "url": "https://ajirospa.com/",
+      "genre": "旅行",
+      "cadence": "monthly",
+      "note": "毎月1組ペア無料宿泊券。要確認"
+    },
+    {
+      "name": "那須温泉旅館協同組合 プレゼント（宿泊クーポン）",
+      "url": "https://www.nasuonsen.com/present/",
+      "genre": "旅行",
+      "cadence": "anytime",
+      "note": "宿泊クーポン1万円分×5組。要確認"
+    }
+  ]
+}

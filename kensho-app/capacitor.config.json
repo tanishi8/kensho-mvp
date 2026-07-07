@@ -1,0 +1,13 @@
+{
+  "appId": "com.tanishi.kensho",
+  "appName": "懸賞アシスタント",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  }
+}

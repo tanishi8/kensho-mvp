@@ -1,0 +1,21 @@
+{
+  "name": "kensho-assistant-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "懸賞アシスタント（Capacitor / PWA）— 懸賞の収集・スコアリング結果を表示し、応募を支援",
+  "scripts": {
+    "serve": "npx --yes http-server www -p 8080 -c-1",
+    "add:android": "npx cap add android",
+    "sync": "npx cap sync",
+    "copy": "npx cap copy",
+    "open:android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.0",
+    "@capacitor/browser": "^6.0.0",
+    "@capacitor/core": "^6.1.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.0"
+  }
+}

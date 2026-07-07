@@ -17,11 +17,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - name: 応募記録の取り込み（アプリ→applog）
+        run: python sync_applog.py || echo "同期対象なし"
       - name: デイリーサマリー
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python main.py --summary
+      - name: アプリ用JSON出力（docs/app_feed.json）
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python app_export.py --out docs/app_feed.json --top 80 || echo "export失敗"
       - name: 受取期限リマインダー
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -30,6 +36,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add -f seen.json applog.json 2>/dev/null || true
+          git add -f seen.json applog.json docs/app_feed.json 2>/dev/null || true
           git commit -m "update state [skip ci]" || echo "no change"
           git push || echo "push skipped"

@@ -1,0 +1,74 @@
+name: 懸賞 自動応募（ツールA）
+
+# 安全設計:
+#  - 既定はスケジュールでも dry-run（送信せず、応募予定を表示）。
+#  - 実送信(live)は、手動実行(workflow_dispatch)で live=true を選んだときだけ。
+#  - live には profile.json（応募者情報）と Playwright が必要。
+#  - 自動応募の対象はメール/CAPTCHA無しフォーム等のみ（gate.py が担保）。
+#    SNS(X/Instagram)・はがき・購入必須クローズドは対象外。
+
+on:
+  workflow_dispatch:
+    inputs:
+      live:
+        description: "実際に送信する（false=dry-run）"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "20 23 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  autoapply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: Playwright 準備（liveのみ）
+        if: ${{ github.event.inputs.live == 'true' }}
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: profile.json 復元（liveのみ）
+        if: ${{ github.event.inputs.live == 'true' }}
+        env:
+          PROFILE_JSON: ${{ secrets.PROFILE_JSON }}
+        run: |
+          if [ -n "$PROFILE_JSON" ]; then
+            printf '%s' "$PROFILE_JSON" > profile.json
+            echo "profile.json を復元しました"
+          else
+            echo "::warning::PROFILE_JSON 未設定。live応募はスキップされます"
+          fi
+
+      - name: 自動応募 実行（toola.py）
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+        run: |
+          if [ "${{ github.event.inputs.live }}" = "true" ]; then
+            echo "=== LIVE 応募（送信あり） ==="
+            python toola.py run --live
+          else
+            echo "=== dry-run（送信なし・候補確認のみ） ==="
+            python toola.py run
+          fi
+
+      - name: 応募ログを保存
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -f applog.json 2>/dev/null || true
+          git commit -m "autoapply: update applog [skip ci]" || echo "no change"
+          git push || echo "push skipped"

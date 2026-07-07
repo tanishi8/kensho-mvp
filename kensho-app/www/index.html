@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <title>懸賞アシスタント</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="hd-row">
+      <h1>🎯 懸賞アシスタント</h1>
+      <button id="btnSettings" class="icon-btn" title="設定">⚙️</button>
+    </div>
+    <div class="meta" id="feedMeta">読み込み中…</div>
+    <div class="filters" id="filters">
+      <input id="q" type="search" placeholder="キーワード検索（賞品名など）" />
+      <div class="chips" id="chipRow"></div>
+      <div class="sort-row">
+        <label>並び順
+          <select id="sortSel">
+            <option value="roi">利益率(コスパ)順</option>
+            <option value="score">期待価値順</option>
+            <option value="win_count">当選本数順</option>
+          </select>
+        </label>
+        <label class="ck"><input type="checkbox" id="hideApplied" /> 応募済みを隠す</label>
+      </div>
+    </div>
+  </header>
+
+  <main id="list" class="list"></main>
+
+  <button id="btnReload" class="fab" title="更新">⟳</button>
+
+  <!-- コメント肉付けモーダル -->
+  <div id="commentModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <strong>コメントを肉付け</strong>
+        <button class="icon-btn" data-close>✕</button>
+      </div>
+      <div class="modal-title" id="cmTitle"></div>
+      <label class="fld">あなたの短い感想・意見
+        <textarea id="cmOpinion" rows="3" placeholder="例）日本酒が好きで、父と晩酌に使いたい"></textarea>
+      </label>
+      <div class="row">
+        <button id="cmGenerate" class="primary">肉付けする</button>
+        <span class="engine" id="cmEngine"></span>
+      </div>
+      <div id="cmResults" class="results"></div>
+      <p class="hint">※ 書いていない事実は創作しません。手動抽選・モニター・Instagramで特に有効です。</p>
+    </div>
+  </div>
+
+  <!-- 設定モーダル -->
+  <div id="settingsModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <strong>設定</strong>
+        <button class="icon-btn" data-close>✕</button>
+      </div>
+      <label class="fld">懸賞データ(app_feed.json)のURL
+        <input id="setFeedUrl" type="url" placeholder="https://ユーザー名.github.io/kensho-mvp/app_feed.json" />
+      </label>
+      <label class="fld">Gemini APIキー（コメント肉付け用・任意）
+        <input id="setGemini" type="password" placeholder="AIza..." />
+      </label>
+      <label class="fld">Geminiモデル
+        <input id="setModel" type="text" placeholder="gemini-2.5-flash-lite" />
+      </label>
+      <hr/>
+      <div class="hint">応募記録をGitHubに同期する場合（任意）</div>
+      <label class="fld">GitHubリポジトリ（owner/repo）
+        <input id="setRepo" type="text" placeholder="tanishi8/kensho-mvp" />
+      </label>
+      <label class="fld">GitHubトークン（contents write権限・任意）
+        <input id="setToken" type="password" placeholder="github_pat_..." />
+      </label>
+      <div class="row">
+        <button id="setSave" class="primary">保存</button>
+        <button id="setClear" class="ghost">保存データを消去</button>
+      </div>
+      <p class="hint">キーやトークンはこの端末のローカルにのみ保存され、外部には送信しません（Gemini/GitHubの公式APIを除く）。</p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
