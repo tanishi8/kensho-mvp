@@ -14,6 +14,10 @@ on:
         description: "実際に送信する（false=dry-run）"
         type: boolean
         default: false
+      max:
+        description: "1回の最大応募数（初回は3推奨・暴走防止）"
+        type: string
+        default: "3"
   schedule:
     - cron: "20 23 * * *"
 
@@ -58,8 +62,8 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
         run: |
           if [ "${{ github.event.inputs.live }}" = "true" ]; then
-            echo "=== LIVE 応募（送信あり） ==="
-            python toola.py run --live
+            echo "=== LIVE 応募（送信あり） max=${{ github.event.inputs.max }} ==="
+            python toola.py run --live --max "${{ github.event.inputs.max }}"
           else
             echo "=== dry-run（送信なし・応募可否の一覧） ==="
             python toola.py plan
