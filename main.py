@@ -1,7 +1,8 @@
 """
 懸賞MVP（フェーズ0）エントリポイント。
-収集(RSS) → 抽出(正規表現) → スコアリング → 重複除去 → Discord通知。
-設計書「10. 開発ロードマップ フェーズ0」に対応。
+収集(RSS) → 抽出(正規表現＋LLM) → スコアリング → 重複除去 → Discord通知。
+--export を付けると、同じ収集結果からアプリ用 docs/app_feed.json も出力する
+（収集・LLM補完を1回で済ませ、通知とアプリ出力の二重実行を避ける）。
 """
 import argparse
 import json
@@ -70,8 +71,10 @@ def run(cfg, items=None, dry_run=False, summary_mode=False):
             continue
         new_seen.add(key)
         kf = cfg.get("keyword_filter", {})
+        # none_of（除外語：当選番号/結果発表/まとめ/終了しました 等）も渡してノイズを弾く
         if kf.get("enabled") and not extract.is_sweepstakes(
-                raw["title"], raw.get("summary", ""), kf.get("any_of", [])):
+                raw["title"], raw.get("summary", ""),
+                kf.get("any_of", []), kf.get("none_of")):
             continue
         info = extract.extract(raw["title"], raw.get("summary", ""))
         info = llm_extract.enrich(info, cfg, summary=raw.get("summary", ""))
@@ -99,6 +102,10 @@ def main():
                     help="seen.jsonを更新せず実行（テスト用）")
     ap.add_argument("--sample", help="サンプルJSON（RSSの代わり）でテスト")
     ap.add_argument("--summary", action="store_true", help="デイリーサマリー形式で通知")
+    ap.add_argument("--export", action="store_true",
+                    help="同じ収集結果からアプリ用 docs/app_feed.json も出力")
+    ap.add_argument("--export-out", default="docs/app_feed.json")
+    ap.add_argument("--export-top", type=int, default=80)
     args = ap.parse_args()
 
     cfg = load_config(args.config)
@@ -107,7 +114,14 @@ def main():
         with open(args.sample, encoding="utf-8") as f:
             items = json.load(f)
     try:
-        run(cfg, items=items, dry_run=args.dry_run, summary_mode=args.summary)
+        results = run(cfg, items=items, dry_run=args.dry_run, summary_mode=args.summary)
+        if args.export:
+            import app_export
+            feed = app_export.feed_from_results(results, cfg, top=args.export_top)
+            os.makedirs(os.path.dirname(args.export_out) or ".", exist_ok=True)
+            with open(args.export_out, "w", encoding="utf-8") as f:
+                json.dump(feed, f, ensure_ascii=False, indent=2)
+            print(f"アプリ用JSON: {args.export_out}（{feed['count']}件）")
     except Exception as e:
         print(f"ERROR: {e}", file=sys.stderr)
         sys.exit(1)

@@ -118,10 +118,11 @@ def load_watch():
     return []
 
 
-def build_feed(cfg, sample=None, top=80, use_llm=True):
-    items = collect(cfg, sample=sample, use_llm=use_llm)
+def feed_from_results(results, cfg, top=80):
+    """既に収集・スコアリング済みの results からアプリ用JSON辞書を組み立てる。
+    main.py が収集を1回で済ませ、通知とアプリ出力を同時に行うために使う。"""
     status_map = _status_map()
-    app_items = [to_app_item(it, status_map) for it in items[:top]]
+    app_items = [to_app_item(it, status_map) for it in results[:top]]
     return {
         "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "rank_by": cfg.get("rank_by", "roi"),
@@ -129,6 +130,11 @@ def build_feed(cfg, sample=None, top=80, use_llm=True):
         "items": app_items,
         "watch": load_watch(),
     }
+
+
+def build_feed(cfg, sample=None, top=80, use_llm=True):
+    items = collect(cfg, sample=sample, use_llm=use_llm)
+    return feed_from_results(items, cfg, top=top)
 
 
 def main():

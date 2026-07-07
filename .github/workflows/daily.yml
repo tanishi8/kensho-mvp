@@ -19,15 +19,11 @@ jobs:
       - run: pip install -r requirements.txt
       - name: 応募記録の取り込み（アプリ→applog）
         run: python sync_applog.py || echo "同期対象なし"
-      - name: デイリーサマリー
+      - name: デイリーサマリー＋アプリ用JSON出力（収集は1回）
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python main.py --summary
-      - name: アプリ用JSON出力（docs/app_feed.json）
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python app_export.py --out docs/app_feed.json --top 80 || echo "export失敗"
+        run: python main.py --summary --export
       - name: 受取期限リマインダー
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
