@@ -71,4 +71,5 @@ jobs:
           git config user.email "actions@github.com"
           git add -f applog.json 2>/dev/null || true
           git commit -m "autoapply: update applog [skip ci]" || echo "no change"
-          git push || echo "push skipped"
+          git pull --rebase origin main || true
+          git push   # 応募記録の消失を防ぐため push 失敗は失敗として扱う

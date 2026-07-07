@@ -48,14 +48,40 @@ function toast(msg) {
   toastTimer = setTimeout(() => t.classList.add("hidden"), 2200);
 }
 
-/* ---------- フィード取得 ---------- */
+/* ---------- フィード取得 ----------
+   優先順位: ①GitHub Contents API（repo+token設定時。private のまま非公開取得）
+            ②設定した公開URL（GitHub Pages 等）
+            ③同梱の app_feed.json（オフライン/フォールバック） */
+async function fetchViaGitHub() {
+  const repo = CFG.repo(), token = CFG.token();
+  if (!repo || !token) return null;
+  const api = `https://api.github.com/repos/${repo}/contents/docs/app_feed.json?ref=main`;
+  const res = await fetch(api + "&t=" + Date.now(), {
+    headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw+json" },
+    cache: "no-store",
+  });
+  if (!res.ok) throw new Error("GitHub API " + res.status);
+  // Accept: raw を尊重しないケースに備え両対応
+  const txt = await res.text();
+  try { return JSON.parse(txt); }
+  catch (e) {
+    const j = JSON.parse(txt);
+    return JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g, "")))));
+  }
+}
+
 async function loadFeed() {
   $("#feedMeta").textContent = "読み込み中…";
-  const url = CFG.feedUrl();
   try {
-    const res = await fetch(url + (url.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    FEED = await res.json();
+    const viaGh = await fetchViaGitHub();
+    if (viaGh) {
+      FEED = viaGh;
+    } else {
+      const url = CFG.feedUrl();
+      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      FEED = await res.json();
+    }
   } catch (e) {
     // フォールバック：同梱の app_feed.json
     try {
@@ -63,7 +89,7 @@ async function loadFeed() {
       FEED = await res2.json();
       toast("オンライン取得に失敗→同梱データを表示");
     } catch (e2) {
-      $("#feedMeta").textContent = "データ取得に失敗しました。設定でURLを確認してください。";
+      $("#feedMeta").textContent = "データ取得に失敗しました。設定を確認してください。";
       FEED = { items: [], watch: [] };
     }
   }
@@ -249,6 +275,7 @@ async function syncApplied(it) {
   if (sha) body.sha = sha;
   const p = await fetch(api, { method: "PUT", headers, body: JSON.stringify(body) });
   if (p.ok) toast("GitHubにも記録しました");
+  else toast(`GitHub記録に失敗（${p.status}）。時間をおいて再試行を`);
 }
 
 /* ---------- コメント肉付け ---------- */
@@ -384,24 +411,3 @@ function escapeHtml(s) {
 }
 
 /* ---------- イベント配線 ---------- */
-$("#q").addEventListener("input", () => render());
-$("#sortSel").addEventListener("change", () => render());
-$("#hideApplied").addEventListener("change", () => render());
-$("#btnReload").addEventListener("click", () => loadFeed());
-document.querySelectorAll(".vtab").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
-$("#btnSettings").addEventListener("click", openSettings);
-$("#cmGenerate").addEventListener("click", generateComment);
-$("#setSave").addEventListener("click", saveSettings);
-$("#setClear").addEventListener("click", clearSettings);
-document.querySelectorAll("[data-close]").forEach((b) =>
-  b.addEventListener("click", (e) => e.target.closest(".modal").classList.add("hidden")));
-document.querySelectorAll(".modal").forEach((m) =>
-  m.addEventListener("click", (e) => { if (e.target === m) m.classList.add("hidden"); }));
-
-/* ---------- Service Worker（PWA） ---------- */
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-}
-
-/* ---------- 起動 ---------- */
-loadFeed();

@@ -34,4 +34,5 @@ jobs:
           git config user.email "actions@github.com"
           git add -f seen.json applog.json docs/app_feed.json 2>/dev/null || true
           git commit -m "update state [skip ci]" || echo "no change"
+          git pull --rebase origin main || true
           git push || echo "push skipped"
