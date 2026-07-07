@@ -1,7 +1,7 @@
 name: 懸賞 自動応募（ツールA）
 
 # 安全設計:
-#  - 既定はスケジュールでも dry-run（送信せず、応募予定を表示）。
+#  - スケジュール実行は「plan」= 応募可否の一覧のみ（送信せず・Playwright不要で軽量）。
 #  - 実送信(live)は、手動実行(workflow_dispatch)で live=true を選んだときだけ。
 #  - live には profile.json（応募者情報）と Playwright が必要。
 #  - 自動応募の対象はメール/CAPTCHA無しフォーム等のみ（gate.py が担保）。
@@ -61,8 +61,8 @@ jobs:
             echo "=== LIVE 応募（送信あり） ==="
             python toola.py run --live
           else
-            echo "=== dry-run（送信なし・候補確認のみ） ==="
-            python toola.py run
+            echo "=== dry-run（送信なし・応募可否の一覧） ==="
+            python toola.py plan
           fi
 
       - name: 応募ログを保存
