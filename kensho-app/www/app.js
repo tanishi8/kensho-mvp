@@ -22,6 +22,7 @@ let FEED = { items: [], watch: [], generated_at: null };
 let appliedLocal = new Set(JSON.parse(LS.get("appliedLocal", "[]")));
 let activeGenre = "all";
 let curItem = null;
+let currentView = "picks";
 
 const $ = (s) => document.querySelector(s);
 const el = (t, c) => { const e = document.createElement(t); if (c) e.className = c; return e; };
@@ -69,8 +70,61 @@ async function loadFeed() {
   const dt = FEED.generated_at ? new Date(FEED.generated_at) : null;
   $("#feedMeta").textContent =
     `全${FEED.items.length}件` + (dt ? ` ・ 更新 ${dt.toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}` : "");
+  renderStats();
   buildGenreChips();
   render();
+  renderWatch();
+}
+
+/* ---------- 統計バー ---------- */
+function renderStats() {
+  const st = FEED.stats || {};
+  const bar = $("#statsBar");
+  if (!st || st.total == null) { bar.innerHTML = ""; return; }
+  const wr = st.win_rate != null ? Math.round(st.win_rate * 100) + "%" : "-";
+  bar.innerHTML = `
+    <div class="st"><b>${st.applied_total ?? 0}</b><span>応募</span></div>
+    <div class="st"><b>${st.won ?? 0}</b><span>当選</span></div>
+    <div class="st"><b>${wr}</b><span>当選率</span></div>
+    <div class="st"><b>${(FEED.items || []).length}</b><span>候補</span></div>`;
+}
+
+/* ---------- ビュー切替（狙い目 / 常設懸賞） ---------- */
+function setView(v) {
+  currentView = v;
+  document.querySelectorAll(".vtab").forEach((b) =>
+    b.classList.toggle("active", b.dataset.view === v));
+  const picks = v === "picks";
+  $("#list").classList.toggle("hidden", !picks);
+  $("#filters").classList.toggle("hidden", !picks);
+  $("#watchList").classList.toggle("hidden", picks);
+}
+
+/* ---------- 常設懸賞（watch）描画 ---------- */
+function renderWatch() {
+  const box = $("#watchList");
+  box.innerHTML = "";
+  const watch = FEED.watch || [];
+  if (!watch.length) {
+    const e = el("div", "empty");
+    e.textContent = "常設懸賞は未登録です（watchlist.yaml に追加できます）。";
+    box.appendChild(e);
+    return;
+  }
+  const label = { monthly: "毎月応募可", weekly: "毎週", anytime: "随時" };
+  watch.forEach((w) => {
+    const c = el("div", "watch-card");
+    const cad = w.cadence || "anytime";
+    c.innerHTML = `
+      <h2>${escapeHtml(w.name || "")}</h2>
+      <span class="cadence ${cad}">${label[cad] || "随時"}${w.genre ? " ・ " + escapeHtml(w.genre) : ""}</span>
+      ${w.note ? `<div class="watch-note">${escapeHtml(w.note)}</div>` : ""}
+      <div class="actions">
+        <button class="open" data-open>応募ページを開く</button>
+      </div>`;
+    c.querySelector("[data-open]").onclick = () => openExternal(w.url);
+    box.appendChild(c);
+  });
 }
 
 /* ---------- ジャンルチップ ---------- */
@@ -334,6 +388,7 @@ $("#q").addEventListener("input", () => render());
 $("#sortSel").addEventListener("change", () => render());
 $("#hideApplied").addEventListener("change", () => render());
 $("#btnReload").addEventListener("click", () => loadFeed());
+document.querySelectorAll(".vtab").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
 $("#btnSettings").addEventListener("click", openSettings);
 $("#cmGenerate").addEventListener("click", generateComment);
 $("#setSave").addEventListener("click", saveSettings);

@@ -15,6 +15,11 @@
       <button id="btnSettings" class="icon-btn" title="設定">⚙️</button>
     </div>
     <div class="meta" id="feedMeta">読み込み中…</div>
+    <div class="statsbar" id="statsBar"></div>
+    <div class="viewtabs" id="viewTabs">
+      <button class="vtab active" data-view="picks">🎯 狙い目</button>
+      <button class="vtab" data-view="watch">🔁 常設懸賞</button>
+    </div>
     <div class="filters" id="filters">
       <input id="q" type="search" placeholder="キーワード検索（賞品名など）" />
       <div class="chips" id="chipRow"></div>
@@ -32,6 +37,7 @@
   </header>
 
   <main id="list" class="list"></main>
+  <section id="watchList" class="list hidden"></section>
 
   <button id="btnReload" class="fab" title="更新">⟳</button>
 

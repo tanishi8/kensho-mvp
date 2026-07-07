@@ -123,10 +123,15 @@ def feed_from_results(results, cfg, top=80):
     main.py が収集を1回で済ませ、通知とアプリ出力を同時に行うために使う。"""
     status_map = _status_map()
     app_items = [to_app_item(it, status_map) for it in results[:top]]
+    try:
+        stats = applog.summary()
+    except Exception:
+        stats = {}
     return {
         "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "rank_by": cfg.get("rank_by", "roi"),
         "count": len(app_items),
+        "stats": stats,
         "items": app_items,
         "watch": load_watch(),
     }

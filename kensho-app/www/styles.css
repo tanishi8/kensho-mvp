@@ -78,3 +78,21 @@ button.ghost{background:#fff; border:1px solid var(--line); padding:11px 16px; b
 .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:90px; background:#0f172a; color:#fff;
   padding:10px 18px; border-radius:999px; font-size:13px; z-index:60; box-shadow:0 3px 10px rgba(0,0,0,.3)}
 hr{border:none; border-top:1px solid var(--line); margin:14px 0}
+
+/* 統計バー */
+.statsbar{display:flex;gap:6px;margin-top:8px}
+.statsbar .st{flex:1;background:rgba(255,255,255,.15);border-radius:8px;padding:6px 4px;text-align:center;color:#fff}
+.statsbar .st b{display:block;font-size:16px;font-weight:700;line-height:1.2}
+.statsbar .st span{font-size:10px;opacity:.9}
+/* ビュー切替タブ */
+.viewtabs{display:flex;gap:6px;margin-top:9px}
+.viewtabs .vtab{flex:1;padding:7px 6px;border-radius:9px;border:1px solid rgba(255,255,255,.35);
+  background:rgba(255,255,255,.12);color:#fff;font-size:13px}
+.viewtabs .vtab.active{background:#fff;color:var(--teal-d);font-weight:700;border-color:#fff}
+/* 常設懸賞カード */
+.watch-card{background:var(--card);border-radius:13px;padding:13px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.watch-card h2{font-size:15px;margin:0 0 7px;line-height:1.4}
+.cadence{display:inline-block;font-size:11px;padding:3px 8px;border-radius:6px;background:#dcfce7;color:#166534;margin-bottom:8px}
+.cadence.monthly{background:#e0e7ff;color:#3730a3}
+.cadence.anytime{background:#fef3c7;color:#92400e}
+.watch-note{font-size:12px;color:var(--sub);margin:6px 0 9px}
