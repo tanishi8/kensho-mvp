@@ -49,53 +49,59 @@ function toast(msg) {
 }
 
 /* ---------- フィード取得 ----------
-   優先順位: ①GitHub Contents API（repo+token設定時。private のまま非公開取得）
-            ②設定した公開URL（GitHub Pages 等）
-            ③同梱の app_feed.json（オフライン/フォールバック） */
+   3段フォールバック（F）: ①GitHub Contents API（repo+token時・private非公開取得）
+                          ②設定した公開URL（GitHub Pages 等）
+                          ③同梱の app_feed.json（オフライン） */
+async function fetchFromUrl(url) {
+  const u = url + (url.includes("?") ? "&" : "?") + "t=" + Date.now();
+  const res = await fetch(u, { cache: "no-store" });
+  if (!res.ok) throw new Error("HTTP " + res.status);
+  return res.json();
+}
+
 async function fetchViaGitHub() {
   const repo = CFG.repo(), token = CFG.token();
   if (!repo || !token) return null;
-  const api = `https://api.github.com/repos/${repo}/contents/docs/app_feed.json?ref=main`;
-  const res = await fetch(api + "&t=" + Date.now(), {
+  const api = `https://api.github.com/repos/${repo}/contents/docs/app_feed.json?ref=main&t=${Date.now()}`;
+  const res = await fetch(api, {
     headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw+json" },
     cache: "no-store",
   });
   if (!res.ok) throw new Error("GitHub API " + res.status);
-  // Accept: raw を尊重しないケースに備え両対応
   const txt = await res.text();
-  try { return JSON.parse(txt); }
-  catch (e) {
-    const j = JSON.parse(txt);
-    return JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g, "")))));
-  }
+  const j = JSON.parse(txt);
+  // Accept:raw ならフィードJSON（contentを持たない）。無視された場合はメタJSON(content=base64)（E）
+  return j.content
+    ? JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g, "")))))
+    : j;
 }
 
 async function loadFeed() {
   $("#feedMeta").textContent = "読み込み中…";
-  try {
-    const viaGh = await fetchViaGitHub();
-    if (viaGh) {
-      FEED = viaGh;
-    } else {
-      const url = CFG.feedUrl();
-      const res = await fetch(url + (url.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      FEED = await res.json();
-    }
-  } catch (e) {
-    // フォールバック：同梱の app_feed.json
+  // 取得元を優先順に並べる（設定に応じて）
+  const sources = [];
+  if (CFG.repo() && CFG.token()) sources.push({ fn: fetchViaGitHub, fallback: false });
+  const url = CFG.feedUrl();
+  if (url && url !== "app_feed.json") sources.push({ fn: () => fetchFromUrl(url), fallback: false });
+  sources.push({ fn: () => fetchFromUrl("app_feed.json"), fallback: true });
+
+  let loaded = false, usedFallback = false;
+  for (const src of sources) {
     try {
-      const res2 = await fetch("app_feed.json?t=" + Date.now(), { cache: "no-store" });
-      FEED = await res2.json();
-      toast("オンライン取得に失敗→同梱データを表示");
-    } catch (e2) {
-      $("#feedMeta").textContent = "データ取得に失敗しました。設定を確認してください。";
-      FEED = { items: [], watch: [] };
-    }
+      const data = await src.fn();
+      if (data) { FEED = data; loaded = true; usedFallback = src.fallback; break; }
+    } catch (e) { /* 次の取得元へ */ }
   }
+  if (!loaded) {
+    $("#feedMeta").textContent = "データ取得に失敗しました。設定を確認してください。";
+    FEED = { items: [], watch: [] };
+  } else if (usedFallback && sources.length > 1) {
+    toast("オンライン取得に失敗→同梱データを表示");
+  }
+
   const dt = FEED.generated_at ? new Date(FEED.generated_at) : null;
   $("#feedMeta").textContent =
-    `全${FEED.items.length}件` + (dt ? ` ・ 更新 ${dt.toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}` : "");
+    `全${(FEED.items || []).length}件` + (dt ? ` ・ 更新 ${dt.toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}` : "");
   renderStats();
   buildGenreChips();
   render();

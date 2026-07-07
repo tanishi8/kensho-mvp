@@ -92,9 +92,35 @@ LLM_FILLABLE = ["genre", "method", "win_count", "prize_value",
                 "manual_lottery", "local", "organizer"]
 
 
+def _cache_path(cfg):
+    return (cfg.get("llm", {}) or {}).get("cache_file", "llm_cache.json")
+
+
+def _load_cache(path):
+    try:
+        if os.path.exists(path):
+            return json.load(open(path, encoding="utf-8"))
+    except Exception:
+        pass
+    return {}
+
+
+def _save_cache(path, cache):
+    try:
+        json.dump(cache, open(path, "w", encoding="utf-8"), ensure_ascii=False)
+    except Exception:
+        pass
+
+
+def _content_key(title, summary):
+    import hashlib
+    return hashlib.sha1((title + "\u0001" + (summary or "")).encode("utf-8")).hexdigest()[:16]
+
+
 def enrich(item, cfg=None, summary=""):
     """
     正規表現抽出結果 item を LLM で補完して返す。
+    - 同一内容（title+summary）はキャッシュ(llm_cache.json)を使い、LLMを再呼び出ししない（G）
     - 正規表現が None/空 の項目のみ LLM 値で埋める（確実な抽出を尊重）
     - LLM未使用・失敗時は item をそのまま返す
     """
@@ -105,31 +131,41 @@ def enrich(item, cfg=None, summary=""):
         return item
 
     title = item.get("title", "")
-    try:
-        if provider == "gemini":
-            key = os.environ.get("GEMINI_API_KEY")
-            if not key:
-                return item
-            model = llm_cfg.get("model", DEFAULT_GEMINI_MODEL)
-            llm = _call_gemini(title, summary, key, model)
-        elif provider == "claude":
-            key = os.environ.get("ANTHROPIC_API_KEY")
-            if not key:
-                return item
-            llm = _call_claude(title, summary, key)
-        else:
-            return item
-    except (urllib.error.URLError, urllib.error.HTTPError, KeyError,
-            ValueError, json.JSONDecodeError, IndexError):
-        # ネットワーク/解析失敗時は安全に正規表現結果を返す
-        item["llm_status"] = "failed"
-        return item
+    ckey = _content_key(title, summary)
+    cpath = _cache_path(cfg)
+    cache = _load_cache(cpath)
 
-    item["llm_status"] = "ok"
+    if ckey in cache:
+        llm = cache[ckey]
+        item["llm_status"] = "cache"
+    else:
+        try:
+            if provider == "gemini":
+                key = os.environ.get("GEMINI_API_KEY")
+                if not key:
+                    return item
+                model = llm_cfg.get("model", DEFAULT_GEMINI_MODEL)
+                llm = _call_gemini(title, summary, key, model)
+            elif provider == "claude":
+                key = os.environ.get("ANTHROPIC_API_KEY")
+                if not key:
+                    return item
+                llm = _call_claude(title, summary, key)
+            else:
+                return item
+        except (urllib.error.URLError, urllib.error.HTTPError, KeyError,
+                ValueError, json.JSONDecodeError, IndexError):
+            item["llm_status"] = "failed"
+            return item
+        # 成功結果のみキャッシュ（必要な項目だけ）
+        cache[ckey] = {k: llm.get(k) for k in LLM_FILLABLE}
+        _save_cache(cpath, cache)
+        llm = cache[ckey]
+        item["llm_status"] = "ok"
+
     for k in LLM_FILLABLE:
         cur = item.get(k)
         new = llm.get(k)
-        # 正規表現が取れていない（None/""/False相当の空）項目だけ補完
         is_empty = cur is None or cur == "" or cur == "不明" or cur == "その他"
         if is_empty and new not in (None, "", "不明"):
             item[k] = new

@@ -1,10 +1,11 @@
 {
-  "generated_at": "2026-07-07T08:36:38.408249+00:00",
+  "generated_at": "2026-07-07T08:50:54.483578+00:00",
   "rank_by": "roi",
   "count": 8,
   "stats": {
     "candidate": 4,
     "applied": 1,
+    "attempted": 0,
     "won": 2,
     "lost": 1,
     "invalid": 0,

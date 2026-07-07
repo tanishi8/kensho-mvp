@@ -101,20 +101,22 @@ def cmd_run(args, cfg):
         prof = {}
 
     items = collect(cfg, args.sample, use_llm=True)
-    applied_items = []
+    applied_items, attempted_items = [], []
     skipped_dupe = 0
     n_attempt = 0
 
     for it in items:
-        if len(applied_items) >= max_apply:
-            print(f"\n[上限] --max {max_apply} 件に達したため停止。")
+        # 上限: live は応募成功数、dry-run は試行数で頭打ち（H）
+        done = len(applied_items) if not dry else n_attempt
+        if done >= max_apply:
+            print(f"\n[上限] --max {max_apply} に達したため停止。")
             break
+
         d = gate.decide(it)
         if d["action"] != "auto":
             continue
 
         rid, _ = applog.upsert_candidate(it)
-        # 重複応募しない（既に applied/won/lost/invalid）
         if already_applied(rid):
             skipped_dupe += 1
             continue
@@ -123,39 +125,56 @@ def cmd_run(args, cfg):
         print(f"\n▶ {it['title'][:46]}  [{method}]")
 
         if method == "メール":
-            # 宛先メールアドレスを確実に取得できないため自動送信しない（誤送信防止）
             print("  ⏭ メール方式は宛先特定不可のため escalate（人間が応募）。")
             continue
 
-        # まとめ記事URL → 本当の応募フォームURLを特定してから開く
-        real_url = resolve.resolve(it.get("link", "")) or it.get("link", "")
-        res = apply_form.apply(it, prof, page_url=real_url, dry_run=dry, submit=args.live)
+        # 1サイトの障害で全体が止まらないよう per-item で try/except（A）
+        try:
+            real_url = resolve.resolve(it.get("link", "")) or it.get("link", "")
+            res = apply_form.apply(it, prof, page_url=real_url, dry_run=dry, submit=args.live)
+        except Exception as e:
+            print(f"  ⚠ エラーによりスキップ: {type(e).__name__}: {e}")
+            continue
+
+        n_attempt += 1
         print(f"  フォーム[{res.get('action')}]: {res.get('reason','')}")
         if res.get("unknown"):
             print(f"  未対応項目: {res['unknown']}")
         if res.get("filled"):
             print(f"  入力予定: {list(res['filled'].keys())}")
 
-        n_attempt += 1
-        if not dry and res.get("submitted"):
-            applog.mark(rid, "applied")
-            applied_items.append(it)
+        if not dry:
+            if res.get("submitted"):
+                applog.mark(rid, "applied")
+                applied_items.append(it)
+            elif res.get("attempted"):
+                # 送信は押したが完了未確認 → attempted 記録（自動再送しない・人間確認）
+                applog.mark(rid, "attempted", note=res.get("reason", ""))
+                attempted_items.append(it)
 
     mode = "実送信" if args.live else "dry-run（未送信）"
-    print(f"\n完了（{mode}）。応募 {len(applied_items)}件 / 試行 {n_attempt} / 重複スキップ {skipped_dupe}")
+    print(f"\n完了（{mode}）。応募成功 {len(applied_items)} / 結果不明 {len(attempted_items)} / "
+          f"試行 {n_attempt} / 重複スキップ {skipped_dupe}")
     if dry:
         print("実際に送信するには --live を付けて実行してください（規約・内容を確認のうえ）。")
 
-    # Discord 報告（実送信で応募があったときのみ）
-    if not dry and applied_items:
+    # Discord 報告（実送信時。成功と「要確認(結果不明)」を分けて通知）
+    if not dry and (applied_items or attempted_items):
         try:
-            notify.send([{
-                "title": "✅応募:" + i["title"][:44], "method": i["method"],
-                "genre": i.get("genre", ""), "win_count": i.get("win_count"),
-                "score": i.get("roi"), "link": i.get("link", ""),
-                "manual_lottery": False, "local": i.get("local", False),
-                "preference_hit": i.get("preference_hit", False),
-            } for i in applied_items], top_n=len(applied_items))
+            payload = []
+            for i in applied_items:
+                payload.append({"title": "✅応募:" + i["title"][:42], "method": i["method"],
+                                "genre": i.get("genre", ""), "win_count": i.get("win_count"),
+                                "score": i.get("roi"), "link": i.get("link", ""),
+                                "manual_lottery": False, "local": i.get("local", False),
+                                "preference_hit": i.get("preference_hit", False)})
+            for i in attempted_items:
+                payload.append({"title": "⚠要確認(結果不明):" + i["title"][:36], "method": i["method"],
+                                "genre": i.get("genre", ""), "win_count": i.get("win_count"),
+                                "score": i.get("roi"), "link": i.get("link", ""),
+                                "manual_lottery": False, "local": i.get("local", False),
+                                "preference_hit": i.get("preference_hit", False)})
+            notify.send(payload, top_n=len(payload))
         except Exception as e:
             print(f"  (Discord報告失敗: {type(e).__name__})")
 

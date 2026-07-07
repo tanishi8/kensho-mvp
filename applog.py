@@ -11,8 +11,9 @@ import hashlib
 DEFAULT_PATH = "applog.json"
 
 # ステータスの定義
-STATUS = ["candidate", "applied", "won", "lost", "invalid"]
-# candidate=候補（未応募） applied=応募済 won=当選 lost=落選 invalid=無効
+STATUS = ["candidate", "applied", "attempted", "won", "lost", "invalid"]
+# candidate=候補（未応募） applied=応募済 attempted=送信したが完了未確認（人間確認要・自動再送しない）
+# won=当選 lost=落選 invalid=無効
 
 
 def _load(path):
