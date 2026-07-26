@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T00:27:56.668006+00:00",
+  "generated_at": "2026-07-26T00:23:22.546191+00:00",
   "rank_by": "roi",
   "count": 18,
   "stats": {
@@ -15,9 +15,9 @@
   },
   "items": [
     {
-      "id": "0977e4c5acd3",
+      "id": "329e42c56e8e",
       "title": "【EPEIOSスマートノンフライオーブンが当たる】揚げない夏を楽しむSNSキャンペーン",
-      "link": "https://www.sinq.co.jp/",
+      "link": "https://camnavi.net/%e3%80%90epeios%e3%82%b9%e3%83%9e%e3%83%bc%e3%83%88%e3%83%8e%e3%83%b3%e3%83%95%e3%83%a9%e3%82%a4%e3%82%aa%e3%83%bc%e3%83%96%e3%83%b3%e3%81%8c%e5%bd%93%e3%81%9f%e3%82%8b%e3%80%91%e6%8f%9a%e3%81%92/",
       "source": "キャンなび（メーカー横断）",
       "method": "instagram",
       "genre": "家電",
@@ -160,9 +160,9 @@
       }
     },
     {
-      "id": "0977e4c5acd3",
+      "id": "cdbb8f3c35f6",
       "title": "2026 夏の学習応援 図書カードプレゼントキャンペーン",
-      "link": "https://www.sinq.co.jp/",
+      "link": "https://camnavi.net/2026-%e5%a4%8f%e3%81%ae%e5%ad%a6%e7%bf%92%e5%bf%9c%e6%8f%b4-%e5%9b%b3%e6%9b%b8%e3%82%ab%e3%83%bc%e3%83%89%e3%83%97%e3%83%ac%e3%82%bc%e3%83%b3%e3%83%88%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc/",
       "source": "キャンなび（メーカー横断）",
       "method": "ネット",
       "genre": "金券",
@@ -184,7 +184,7 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://www.sinq.co.jp/",
+        "open_url": "https://camnavi.net/2026-%e5%a4%8f%e3%81%ae%e5%ad%a6%e7%bf%92%e5%bf%9c%e6%8f%b4-%e5%9b%b3%e6%9b%b8%e3%82%ab%e3%83%bc%e3%83%89%e3%83%97%e3%83%ac%e3%82%bc%e3%83%b3%e3%83%88%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc/",
         "action": "応募フォーム/ページを開く"
       }
     },
@@ -214,64 +214,6 @@
         "platform": "web",
         "label": "応募ページを開く",
         "open_url": "https://stamprally.org/s/44326",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "eb987dcfca65",
-      "title": "周遊スタンプラリー「四国巡りんく」",
-      "link": "https://stamprally.org/s/44298",
-      "source": "日本スタンプラリー協会（景品あり多数）",
-      "method": "スタンプラリー",
-      "genre": "その他",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": true,
-      "preference_hit": false,
-      "score": 0.434,
-      "roi": 0.0434,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://stamprally.org/s/44298",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "df30fa033646",
-      "title": "てんぱく、みーっけ！",
-      "link": "https://stamprally.org/s/44295",
-      "source": "日本スタンプラリー協会（景品あり多数）",
-      "method": "スタンプラリー",
-      "genre": "その他",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": true,
-      "preference_hit": false,
-      "score": 0.434,
-      "roi": 0.0434,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://stamprally.org/s/44295",
         "action": "応募フォーム/ページを開く"
       }
     },
@@ -334,6 +276,35 @@
       }
     },
     {
+      "id": "34b4b8352200",
+      "title": "2026しまなみ・ゆめしま・やまなみサイクルスタンプラリー",
+      "link": "https://stamprally.org/s/44352",
+      "source": "日本スタンプラリー協会（景品あり多数）",
+      "method": "スタンプラリー",
+      "genre": "食品",
+      "win_count": null,
+      "prize_value": null,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.293,
+      "roi": 0.0293,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
+      "comment_suggestions": [
+        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
+        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://stamprally.org/s/44352",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
       "id": "2b6f0478a0fd",
       "title": "豪華賞品が当たる懸賞プレゼントキャンペーン",
       "link": "https://otokuchin.com/present-gorgeous/",
@@ -359,6 +330,35 @@
         "platform": "web",
         "label": "応募ページを開く",
         "open_url": "https://otokuchin.com/present-gorgeous/",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "f6053164abbe",
+      "title": "スマホでスタンプラリー",
+      "link": "https://stamprally.org/s/44355",
+      "source": "日本スタンプラリー協会（景品あり多数）",
+      "method": "スタンプラリー",
+      "genre": "その他",
+      "win_count": null,
+      "prize_value": null,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.241,
+      "roi": 0.0241,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://stamprally.org/s/44355",
         "action": "応募フォーム/ページを開く"
       }
     },
@@ -392,9 +392,9 @@
       }
     },
     {
-      "id": "3bdc1d667150",
+      "id": "51b7a612d697",
       "title": "TABASCO®ブランドスパイスチャージキャンペーン",
-      "link": "https://tabasco.co.jp/fuji-rock-festival-vol02/",
+      "link": "https://camnavi.net/tabasco%e3%83%96%e3%83%a9%e3%83%b3%e3%83%89%e3%82%b9%e3%83%91%e3%82%a4%e3%82%b9%e3%83%81%e3%83%a3%e3%83%bc%e3%82%b8%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/",
       "source": "キャンなび（メーカー横断）",
       "method": "不明",
       "genre": "食品",
@@ -416,7 +416,7 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://tabasco.co.jp/fuji-rock-festival-vol02/",
+        "open_url": "https://camnavi.net/tabasco%e3%83%96%e3%83%a9%e3%83%b3%e3%83%89%e3%82%b9%e3%83%91%e3%82%a4%e3%82%b9%e3%83%81%e3%83%a3%e3%83%bc%e3%82%b8%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/",
         "action": "応募フォーム/ページを開く"
       }
     },
