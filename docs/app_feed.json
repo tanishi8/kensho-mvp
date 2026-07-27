@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-26T00:23:22.546191+00:00",
+  "generated_at": "2026-07-27T00:26:19.441034+00:00",
   "rank_by": "roi",
-  "count": 18,
+  "count": 13,
   "stats": {
     "candidate": 15,
     "applied": 1,
@@ -44,35 +44,6 @@
       }
     },
     {
-      "id": "05aec1fe99b6",
-      "title": "ダムカレイクラリー2026",
-      "link": "https://stamprally.org/s/44313",
-      "source": "日本スタンプラリー協会（景品あり多数）",
-      "method": "スタンプラリー",
-      "genre": "旅行",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": true,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.893,
-      "roi": 0.0893,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "手動抽選：コメントが当落に効きやすい。具体的に書くこと推奨。",
-      "comment_suggestions": [
-        "この地域にずっと行ってみたいと思っていました。当選しましたらなかなか行けなかった家族旅行を実現したいです。",
-        "ご当地の魅力に以前から惹かれていました。当選しましたら日頃の疲れを癒やすご褒美の時間にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://stamprally.org/s/44313",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
       "id": "ce5a6e039de4",
       "title": "2026年写真投稿キャンペーン",
       "link": "https://camnavi.net/2026%e5%b9%b4%e5%86%99%e7%9c%9f%e6%8a%95%e7%a8%bf%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/",
@@ -98,35 +69,6 @@
         "platform": "instagram",
         "label": "Instagramで開く（フォロー/投稿）",
         "open_url": "https://www.instagram.com/explore/tags/2026%E5%B9%B4%E5%86%99%E7%9C%9F%E6%8A%95%E7%A8%BF%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3",
-        "action": "投稿を開き、あなたがフォロー／規定ハッシュタグで投稿"
-      }
-    },
-    {
-      "id": "79a0432c49ac",
-      "title": "その場で当たる・毎日応募できる懸賞情報",
-      "link": "https://otokuchin.com/present-sonobade/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "instagram",
-      "genre": "その他",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.372,
-      "roi": 0.0744,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
-      ],
-      "sns": {
-        "platform": "instagram",
-        "label": "Instagramで開く（フォロー/投稿）",
-        "open_url": "https://www.instagram.com/explore/tags/%E3%81%9D%E3%81%AE%E5%A0%B4%E3%81%A7%E5%BD%93%E3%81%9F%E3%82%8B%E3%83%BB%E6%AF%8E%E6%97%A5%E5%BF%9C%E5%8B%9F%E3%81%A7%E3%81%8D%E3%82%8B%E6%87%B8%E8%B3%9E%E6%83%85%E5%A0%B1",
         "action": "投稿を開き、あなたがフォロー／規定ハッシュタグで投稿"
       }
     },
@@ -189,35 +131,6 @@
       }
     },
     {
-      "id": "06c073085914",
-      "title": "佐野市むらづくりそばスタンプラリー",
-      "link": "https://stamprally.org/s/44326",
-      "source": "日本スタンプラリー協会（景品あり多数）",
-      "method": "スタンプラリー",
-      "genre": "食品",
-      "win_count": 170,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": true,
-      "preference_hit": false,
-      "score": 0.632,
-      "roi": 0.0632,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
-        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://stamprally.org/s/44326",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
       "id": "12373efceb34",
       "title": "WellthVerse 夏のプレゼントキャンペーン",
       "link": "https://camnavi.net/wellthverse-%e5%a4%8f%e3%81%ae%e3%83%97%e3%83%ac%e3%82%bc%e3%83%b3%e3%83%88%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/",
@@ -243,35 +156,6 @@
         "platform": "web",
         "label": "応募ページを開く",
         "open_url": "https://camnavi.net/wellthverse-%e5%a4%8f%e3%81%ae%e3%83%97%e3%83%ac%e3%82%bc%e3%83%b3%e3%83%88%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "d75101f7826c",
-      "title": "大量当選プレゼント・当選人数が多い懸賞情報",
-      "link": "https://otokuchin.com/present-tairyou/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "ネット",
-      "genre": "その他",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.332,
-      "roi": 0.0332,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://otokuchin.com/present-tairyou/",
         "action": "応募フォーム/ページを開く"
       }
     },
@@ -305,31 +189,31 @@
       }
     },
     {
-      "id": "2b6f0478a0fd",
-      "title": "豪華賞品が当たる懸賞プレゼントキャンペーン",
-      "link": "https://otokuchin.com/present-gorgeous/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "不明",
-      "genre": "金券",
+      "id": "d997557f148c",
+      "title": "地図記号スタンプラリー「スタンプを押して、石神井の地図を完成させよう」",
+      "link": "https://stamprally.org/s/44361",
+      "source": "日本スタンプラリー協会（景品あり多数）",
+      "method": "スタンプラリー",
+      "genre": "その他",
       "win_count": null,
-      "prize_value": 10000,
+      "prize_value": null,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.269,
-      "roi": 0.0269,
+      "score": 0.241,
+      "roi": 0.0241,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
       "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
       "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
       ],
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://otokuchin.com/present-gorgeous/",
+        "open_url": "https://stamprally.org/s/44361",
         "action": "応募フォーム/ページを開く"
       }
     },
@@ -446,35 +330,6 @@
         "platform": "web",
         "label": "応募ページを開く",
         "open_url": "https://camnavi.net/%e3%80%90%e3%81%8a%e3%81%8b%e3%81%92%e3%81%95%e3%81%be%e3%81%a7%e3%80%8c%e9%9f%93%e3%81%ae%e9%a3%9f%e8%8f%9c%e3%80%8d21%e5%91%a8%e5%b9%b4-%e5%a4%8f%e3%81%ab%e3%81%8a%e3%81%99%e3%81%99%e3%82%81/",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "78df6675a87b",
-      "title": "日用品・生活用品の無料サンプル・試供品の大量当選プレゼント",
-      "link": "https://otokuchin.com/sample-daily/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "不明",
-      "genre": "日用品",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.107,
-      "roi": 0.0107,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "普段から愛用していて、品質の良さを実感しています。当選しましたら毎日の暮らしで実際に使って良さを実感したいです。",
-        "気になっていた商品なので、ぜひ試してみたいです。当選しましたら家事の時短に役立てたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://otokuchin.com/sample-daily/",
         "action": "応募フォーム/ページを開く"
       }
     },
