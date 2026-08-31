@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-30T01:28:15.857945+00:00",
+  "generated_at": "2026-08-31T01:38:35.552180+00:00",
   "rank_by": "roi",
-  "count": 11,
+  "count": 8,
   "stats": {
     "candidate": 15,
     "applied": 1,
@@ -102,89 +102,31 @@
       }
     },
     {
-      "id": "79a0432c49ac",
-      "title": "その場で当たる・毎日応募できる懸賞情報",
-      "link": "https://otokuchin.com/present-sonobade/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "instagram",
-      "genre": "その他",
+      "id": "106fbf1f614b",
+      "title": "秋のごせんスタンプラリー2026",
+      "link": "https://stamprally.org/s/44616",
+      "source": "日本スタンプラリー協会（景品あり多数）",
+      "method": "スタンプラリー",
+      "genre": "食品",
       "win_count": null,
       "prize_value": null,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.372,
-      "roi": 0.0744,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
-      ],
-      "sns": {
-        "platform": "instagram",
-        "label": "Instagramで開く（フォロー/投稿）",
-        "open_url": "https://www.instagram.com/explore/tags/%E3%81%9D%E3%81%AE%E5%A0%B4%E3%81%A7%E5%BD%93%E3%81%9F%E3%82%8B%E3%83%BB%E6%AF%8E%E6%97%A5%E5%BF%9C%E5%8B%9F%E3%81%A7%E3%81%8D%E3%82%8B%E6%87%B8%E8%B3%9E%E6%83%85%E5%A0%B1",
-        "action": "投稿を開き、あなたがフォロー／規定ハッシュタグで投稿"
-      }
-    },
-    {
-      "id": "d75101f7826c",
-      "title": "大量当選プレゼント・当選人数が多い懸賞情報",
-      "link": "https://otokuchin.com/present-tairyou/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "ネット",
-      "genre": "その他",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.332,
-      "roi": 0.0332,
+      "score": 0.293,
+      "roi": 0.0293,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
       "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
       "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
+        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
+        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
       ],
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://otokuchin.com/present-tairyou/",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "2b6f0478a0fd",
-      "title": "豪華賞品が当たる懸賞プレゼントキャンペーン",
-      "link": "https://otokuchin.com/present-gorgeous/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "不明",
-      "genre": "金券",
-      "win_count": null,
-      "prize_value": 10000,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.269,
-      "roi": 0.0269,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://otokuchin.com/present-gorgeous/",
+        "open_url": "https://stamprally.org/s/44616",
         "action": "応募フォーム/ページを開く"
       }
     },
@@ -214,35 +156,6 @@
         "platform": "web",
         "label": "応募ページを開く",
         "open_url": "https://camnavi.net/%e3%82%af%e3%83%aa%e3%83%b3%e3%82%b9%e3%82%a42026%e5%a4%8f%e3%81%ae%e3%83%97%e3%83%ac%e3%83%9f%e3%82%a2%e3%83%a0%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3/",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "78df6675a87b",
-      "title": "日用品・生活用品の無料サンプル・試供品の大量当選プレゼント",
-      "link": "https://otokuchin.com/sample-daily/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "不明",
-      "genre": "日用品",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.107,
-      "roi": 0.0107,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "普段から愛用していて、品質の良さを実感しています。当選しましたら毎日の暮らしで実際に使って良さを実感したいです。",
-        "気になっていた商品なので、ぜひ試してみたいです。当選しましたら家事の時短に役立てたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://otokuchin.com/sample-daily/",
         "action": "応募フォーム/ページを開く"
       }
     },
