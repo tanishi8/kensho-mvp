@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-21T01:29:01.890223+00:00",
+  "generated_at": "2026-10-22T01:26:42.806371+00:00",
   "rank_by": "roi",
-  "count": 46,
+  "count": 40,
   "stats": {
     "candidate": 15,
     "applied": 1,
@@ -15,61 +15,32 @@
   },
   "items": [
     {
-      "id": "8379e2edf645",
-      "title": "50,000名様にJUJUのスペシャル・ライブ生配信視聴権が当たる会員限定キャンペーン",
-      "link": "https://www.nuro.jp/hikari/campaign/juju/",
+      "id": "3e603030ed35",
+      "title": "【セブン-イレブン】えらべるポイント最大10,000ポイントが当たる大量当選懸賞",
+      "link": "https://vdpro.jp/sej.giftcards9/",
       "source": "懸賞主婦",
       "method": "ネット",
-      "genre": "旅行",
-      "win_count": 50000,
-      "prize_value": null,
+      "genre": "金券",
+      "win_count": null,
+      "prize_value": 10000,
       "manual_lottery": false,
-      "local": true,
+      "local": false,
       "preference_hit": false,
-      "score": 2.053,
-      "roi": 0.2053,
+      "score": 0.886,
+      "roi": 0.0886,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
       "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
       "comment_suggestions": [
-        "この地域にずっと行ってみたいと思っていました。当選しましたらなかなか行けなかった家族旅行を実現したいです。",
-        "ご当地の魅力に以前から惹かれていました。当選しましたら日頃の疲れを癒やすご褒美の時間にしたいです。"
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
       ],
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://www.nuro.jp/hikari/campaign/juju/",
+        "open_url": "https://vdpro.jp/sej.giftcards9/",
         "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "20d1a2af0ff5",
-      "title": "タケヤみその商品が毎月当たる！今月のプレゼントキャンペーン",
-      "link": "https://ac.baby-calendar.jp/aa1S88X4cX56e50d/cl/?bId=6677h607&bannerNum=10",
-      "source": "懸賞主婦",
-      "method": "instagram",
-      "genre": "食品",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.451,
-      "roi": 0.0902,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
-      "comment_suggestions": [
-        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
-        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
-      ],
-      "sns": {
-        "platform": "instagram",
-        "label": "Instagramで開く（フォロー/投稿）",
-        "open_url": "https://www.instagram.com/explore/tags/%E3%82%BF%E3%82%B1%E3%83%A4%E3%81%BF%E3%81%9D%E3%81%AE%E5%95%86%E5%93%81%E3%81%8C%E6%AF%8E%E6%9C%88%E5%BD%93%E3%81%9F%E3%82%8B%EF%BC%81%E4%BB%8A%E6%9C%88%E3%81%AE%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3",
-        "action": "投稿を開き、あなたがフォロー／規定ハッシュタグで投稿"
       }
     },
     {
@@ -102,118 +73,60 @@
       }
     },
     {
-      "id": "79a0432c49ac",
-      "title": "その場で当たる・毎日応募できる懸賞情報",
-      "link": "https://otokuchin.com/present-sonobade/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "instagram",
-      "genre": "その他",
+      "id": "20d1a2af0ff5",
+      "title": "最大10,000円分のえらべるPayがその場で当たる7日間連続キャンペーン",
+      "link": "https://ac.baby-calendar.jp/aa1S88X4cX56e50d/cl/?bId=6677h607&bannerNum=10",
+      "source": "懸賞主婦",
+      "method": "即時当選",
+      "genre": "金券",
+      "win_count": null,
+      "prize_value": 10000,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.161,
+      "roi": 0.0806,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "即時当選（自動抽選）：コメントは無効。数を回すことを優先。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://ac.baby-calendar.jp/aa1S88X4cX56e50d/cl/?bId=6677h607&bannerNum=10",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "e446ed89aa04",
+      "title": "いち髪×HANAのコラボグッズがその場で当たるクラシエのレシート懸賞",
+      "link": "https://www.kracie.co.jp/ichikami/campaign2026lp/",
+      "source": "懸賞主婦",
+      "method": "即時当選",
+      "genre": "家電",
       "win_count": null,
       "prize_value": null,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.372,
-      "roi": 0.0744,
+      "score": 0.12,
+      "roi": 0.06,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
-      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
+      "comment_advice": "即時当選（自動抽選）：コメントは無効。数を回すことを優先。",
       "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
-      ],
-      "sns": {
-        "platform": "instagram",
-        "label": "Instagramで開く（フォロー/投稿）",
-        "open_url": "https://www.instagram.com/explore/tags/%E3%81%9D%E3%81%AE%E5%A0%B4%E3%81%A7%E5%BD%93%E3%81%9F%E3%82%8B%E3%83%BB%E6%AF%8E%E6%97%A5%E5%BF%9C%E5%8B%9F%E3%81%A7%E3%81%8D%E3%82%8B%E6%87%B8%E8%B3%9E%E6%83%85%E5%A0%B1",
-        "action": "投稿を開き、あなたがフォロー／規定ハッシュタグで投稿"
-      }
-    },
-    {
-      "id": "8af868c8232e",
-      "title": "USJ 1デイ・スタジオ・パスが当たる福岡県在住者限定キャンペーン",
-      "link": "https://wester.jr-odekake.net/campaign/detail/012027101301",
-      "source": "懸賞主婦",
-      "method": "不明",
-      "genre": "旅行",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": true,
-      "local": true,
-      "preference_hit": false,
-      "score": 0.67,
-      "roi": 0.067,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "手動抽選：コメントが当落に効きやすい。具体的に書くこと推奨。",
-      "comment_suggestions": [
-        "この地域にずっと行ってみたいと思っていました。当選しましたらなかなか行けなかった家族旅行を実現したいです。",
-        "ご当地の魅力に以前から惹かれていました。当選しましたら日頃の疲れを癒やすご褒美の時間にしたいです。"
+        "購入を検討していた商品で、口コミも参考にしていました。当選しましたら毎日の生活がより快適になりそうで楽しみです。",
+        "この機能が暮らしにぴったりだと感じています。当選しましたら古くなった家電の買い替えを考えていたので嬉しいです。"
       ],
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://wester.jr-odekake.net/campaign/detail/012027101301",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "d9dfcb9ef0ec",
-      "title": "新発売 サントリー「THE DRY」のコンビニ引換クーポンが当たる大量当選懸賞",
-      "link": "https://mobile.suntory.co.jp/cpn/rtd/thedry/K2610TDY1/",
-      "source": "懸賞主婦",
-      "method": "ネット",
-      "genre": "食品",
-      "win_count": 370000,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.523,
-      "roi": 0.0523,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
-        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://mobile.suntory.co.jp/cpn/rtd/thedry/K2610TDY1/",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "5d83eacc326f",
-      "title": "USJ 1デイ・スタジオ・パスが当たるローソン近畿エリア限定キャンペーン",
-      "link": "https://www.lawson.co.jp/lab/tsuushin/art/1531974_4659.html",
-      "source": "懸賞主婦",
-      "method": "不明",
-      "genre": "旅行",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": true,
-      "preference_hit": false,
-      "score": 0.478,
-      "roi": 0.0478,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "この地域にずっと行ってみたいと思っていました。当選しましたらなかなか行けなかった家族旅行を実現したいです。",
-        "ご当地の魅力に以前から惹かれていました。当選しましたら日頃の疲れを癒やすご褒美の時間にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://www.lawson.co.jp/lab/tsuushin/art/1531974_4659.html",
+        "open_url": "https://www.kracie.co.jp/ichikami/campaign2026lp/",
         "action": "応募フォーム/ページを開く"
       }
     },
@@ -305,23 +218,23 @@
       }
     },
     {
-      "id": "c3f5fb641b9e",
-      "title": "【滋賀・三重】トナリマチドライブスタンプラリー",
-      "link": "https://stamprally.org/s/44949",
-      "source": "日本スタンプラリー協会（景品あり多数）",
-      "method": "スタンプラリー",
+      "id": "472ace0b1400",
+      "title": "DAMA カシミヤガーゼ ストールを55名様にプレゼント",
+      "link": "https://www.dinos.co.jp/season_s/55th/55campaign/",
+      "source": "懸賞CLUB（メーカー横断）",
+      "method": "ネット",
       "genre": "その他",
-      "win_count": null,
+      "win_count": 55,
       "prize_value": null,
-      "manual_lottery": true,
+      "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.338,
-      "roi": 0.0338,
+      "score": 0.365,
+      "roi": 0.0365,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
-      "comment_advice": "手動抽選：コメントが当落に効きやすい。具体的に書くこと推奨。",
+      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
       "comment_suggestions": [
         "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
         "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
@@ -329,7 +242,7 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://stamprally.org/s/44949",
+        "open_url": "https://www.dinos.co.jp/season_s/55th/55campaign/",
         "action": "応募フォーム/ページを開く"
       }
     },
@@ -363,64 +276,6 @@
       }
     },
     {
-      "id": "d75101f7826c",
-      "title": "大量当選プレゼント・当選人数が多い懸賞情報",
-      "link": "https://otokuchin.com/present-tairyou/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "ネット",
-      "genre": "その他",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.332,
-      "roi": 0.0332,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://otokuchin.com/present-tairyou/",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "51181a52fa67",
-      "title": "グルメカタログギフトやドリンクチケットが当たるサントリー自販機の大量当選懸賞",
-      "link": "https://touch-suntory-line-mini-app.s3.ap-northeast-1.amazonaws.com/openCampaign.html?id=627803e6-e9c7-4461-b8c6-bbf0ec9d62ba",
-      "source": "懸賞主婦",
-      "method": "スタンプラリー",
-      "genre": "食品",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.293,
-      "roi": 0.0293,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
-        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://touch-suntory-line-mini-app.s3.ap-northeast-1.amazonaws.com/openCampaign.html?id=627803e6-e9c7-4461-b8c6-bbf0ec9d62ba",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
       "id": "237484d90af2",
       "title": "宮島対岸リゾートエリア周遊スタンプラリー",
       "link": "https://stamprally.org/s/44981",
@@ -450,147 +305,60 @@
       }
     },
     {
-      "id": "e9883e36ff25",
-      "title": "毎月開催！よみうりランド招待券が10組20名様に当たる当たるプレゼントキャンペーン",
-      "link": "https://yomipo.yomiuri.co.jp/present/detail/11121",
+      "id": "6b323c1b3f0d",
+      "title": "10,000円分のAmazonギフトカードがその場で当たる豪華X懸賞",
+      "link": "https://kensho-everyday.com/archives/78101",
       "source": "懸賞主婦",
-      "method": "不明",
-      "genre": "旅行",
-      "win_count": 20,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.292,
-      "roi": 0.0292,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "この地域にずっと行ってみたいと思っていました。当選しましたらなかなか行けなかった家族旅行を実現したいです。",
-        "ご当地の魅力に以前から惹かれていました。当選しましたら日頃の疲れを癒やすご褒美の時間にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://yomipo.yomiuri.co.jp/present/detail/11121",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "21c5c13bc3f4",
-      "title": "【X懸賞】えらべるPay最大8,260円分を50名様にプレゼント",
-      "link": "https://kenshou.club/archives/964954",
-      "source": "懸賞CLUB（メーカー横断）",
       "method": "x",
-      "genre": "金券",
-      "win_count": 50,
-      "prize_value": 8260,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.058,
-      "roi": 0.0289,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "X拡散型：自動抽選が多くコメント効果は限定的。引用RTで具体的に書くと手動抽選時に有利。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
-      ],
-      "sns": {
-        "platform": "x",
-        "label": "Xで開く（RT/フォロー）",
-        "open_url": "https://x.com/search?q=%E3%80%90X%E6%87%B8%E8%B3%9E%E3%80%91%E3%81%88%E3%82%89%E3%81%B9%E3%82%8BPay%E6%9C%80%E5%A4%A78%2C260%E5%86%86%E5%88%86%E3%82%9250%E5%90%8D%E6%A7%98%E3%81%AB%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88&f=live",
-        "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
-      }
-    },
-    {
-      "id": "2b6f0478a0fd",
-      "title": "豪華賞品が当たる懸賞プレゼントキャンペーン",
-      "link": "https://otokuchin.com/present-gorgeous/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "不明",
       "genre": "金券",
       "win_count": null,
       "prize_value": 10000,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.269,
+      "score": 0.054,
       "roi": 0.0269,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://otokuchin.com/present-gorgeous/",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "961a80a2035c",
-      "title": "東京ディズニーリゾート パークチケットや卓上カレンダーが当たる豪華懸賞",
-      "link": "https://www.shinryo.com/sponsor/cp14/",
-      "source": "懸賞主婦",
-      "method": "不明",
-      "genre": "旅行",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.266,
-      "roi": 0.0266,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "この地域にずっと行ってみたいと思っていました。当選しましたらなかなか行けなかった家族旅行を実現したいです。",
-        "ご当地の魅力に以前から惹かれていました。当選しましたら日頃の疲れを癒やすご褒美の時間にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://www.shinryo.com/sponsor/cp14/",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "ff713cb17ca9",
-      "title": "GREEN×EXPO 2027 入場チケットが当たるサカタのタネの豪華Xキャンペーン",
-      "link": "https://kensho-everyday.com/archives/290008",
-      "source": "懸賞主婦",
-      "method": "x",
-      "genre": "旅行",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.053,
-      "roi": 0.0266,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
       "comment_advice": "X拡散型：自動抽選が多くコメント効果は限定的。引用RTで具体的に書くと手動抽選時に有利。",
       "comment_suggestions": [
-        "この地域にずっと行ってみたいと思っていました。当選しましたらなかなか行けなかった家族旅行を実現したいです。",
-        "ご当地の魅力に以前から惹かれていました。当選しましたら日頃の疲れを癒やすご褒美の時間にしたいです。"
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
       ],
       "sns": {
         "platform": "x",
         "label": "Xで開く（RT/フォロー）",
-        "open_url": "https://x.com/search?q=GREEN%C3%97EXPO%202027%20%E5%85%A5%E5%A0%B4%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%81%8C%E5%BD%93%E3%81%9F%E3%82%8B%E3%82%B5%E3%82%AB%E3%82%BF%E3%81%AE%E3%82%BF%E3%83%8D%E3%81%AE%E8%B1%AA%E8%8F%AFX%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3&f=live",
+        "open_url": "https://x.com/search?q=10%2C000%E5%86%86%E5%88%86%E3%81%AEAmazon%E3%82%AE%E3%83%95%E3%83%88%E3%82%AB%E3%83%BC%E3%83%89%E3%81%8C%E3%81%9D%E3%81%AE%E5%A0%B4%E3%81%A7%E5%BD%93%E3%81%9F%E3%82%8B%E8%B1%AA%E8%8F%AFX%E6%87%B8%E8%B3%9E&f=live",
+        "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
+      }
+    },
+    {
+      "id": "ad4985d55149",
+      "title": "5,000円分のオリーブの丘食事券が当たる毎日応募Xキャンペーン",
+      "link": "https://kensho-everyday.com/archives/232671",
+      "source": "懸賞主婦",
+      "method": "x",
+      "genre": "金券",
+      "win_count": null,
+      "prize_value": 5000,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.05,
+      "roi": 0.0248,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "X拡散型：自動抽選が多くコメント効果は限定的。引用RTで具体的に書くと手動抽選時に有利。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
+      ],
+      "sns": {
+        "platform": "x",
+        "label": "Xで開く（RT/フォロー）",
+        "open_url": "https://x.com/search?q=5%2C000%E5%86%86%E5%88%86%E3%81%AE%E3%82%AA%E3%83%AA%E3%83%BC%E3%83%96%E3%81%AE%E4%B8%98%E9%A3%9F%E4%BA%8B%E5%88%B8%E3%81%8C%E5%BD%93%E3%81%9F%E3%82%8B%E6%AF%8E%E6%97%A5%E5%BF%9C%E5%8B%9FX%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3&f=live",
         "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
       }
     },
@@ -624,77 +392,19 @@
       }
     },
     {
-      "id": "bdf1fe598754",
-      "title": "JA福島の名産品が当たる豪華プレゼントキャンペーン",
-      "link": "https://form.ja-group.or.jp/ja022/present",
+      "id": "425072e1262f",
+      "title": "2,500円分のピザーラネットクーポンがその場で当たるXキャンペーン",
+      "link": "https://ac.baby-calendar.jp/aa1S88X4cX56e50d/cl/?bId=6c2C61b7&bannerNum=2",
       "source": "懸賞主婦",
-      "method": "不明",
-      "genre": "食品",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": true,
-      "score": 0.219,
-      "roi": 0.0219,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
-        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://form.ja-group.or.jp/ja022/present",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "48450404b106",
-      "title": "PlayStation 5やUNIQLO T-shirtがその場で当たる豪華Xキャンペーン",
-      "link": "https://kensho-everyday.com/archives/290033",
-      "source": "懸賞主婦",
-      "method": "x",
-      "genre": "家電",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.04,
-      "roi": 0.02,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "X拡散型：自動抽選が多くコメント効果は限定的。引用RTで具体的に書くと手動抽選時に有利。",
-      "comment_suggestions": [
-        "購入を検討していた商品で、口コミも参考にしていました。当選しましたら毎日の生活がより快適になりそうで楽しみです。",
-        "この機能が暮らしにぴったりだと感じています。当選しましたら古くなった家電の買い替えを考えていたので嬉しいです。"
-      ],
-      "sns": {
-        "platform": "x",
-        "label": "Xで開く（RT/フォロー）",
-        "open_url": "https://x.com/search?q=PlayStation%205%E3%82%84UNIQLO%20T-shirt%E3%81%8C%E3%81%9D%E3%81%AE%E5%A0%B4%E3%81%A7%E5%BD%93%E3%81%9F%E3%82%8B%E8%B1%AA%E8%8F%AFX%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3&f=live",
-        "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
-      }
-    },
-    {
-      "id": "3ce557e18742",
-      "title": "【X懸賞】タリーズデジタルギフト500円分×2を50名様にプレゼント",
-      "link": "https://kenshou.club/archives/965038",
-      "source": "懸賞CLUB（メーカー横断）",
       "method": "x",
       "genre": "金券",
-      "win_count": 50,
-      "prize_value": 500,
+      "win_count": null,
+      "prize_value": 2500,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.04,
-      "roi": 0.02,
+      "score": 0.046,
+      "roi": 0.0228,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
@@ -706,76 +416,105 @@
       "sns": {
         "platform": "x",
         "label": "Xで開く（RT/フォロー）",
-        "open_url": "https://x.com/search?q=%E3%80%90X%E6%87%B8%E8%B3%9E%E3%80%91%E3%82%BF%E3%83%AA%E3%83%BC%E3%82%BA%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AE%E3%83%95%E3%83%88500%E5%86%86%E5%88%86%C3%972%E3%82%9250%E5%90%8D%E6%A7%98%E3%81%AB%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88&f=live",
+        "open_url": "https://x.com/search?q=2%2C500%E5%86%86%E5%88%86%E3%81%AE%E3%83%94%E3%82%B6%E3%83%BC%E3%83%A9%E3%83%8D%E3%83%83%E3%83%88%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%81%8C%E3%81%9D%E3%81%AE%E5%A0%B4%E3%81%A7%E5%BD%93%E3%81%9F%E3%82%8BX%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3&f=live",
         "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
       }
     },
     {
-      "id": "78515a32182d",
-      "title": "THE DRY コンビニ限定キャンペーン賞品",
-      "link": "https://modcp.suntory.co.jp/K2610TDY1/top/",
-      "source": "懸賞ニュース",
+      "id": "27a49f63fef0",
+      "title": "ミニ冷蔵庫や保冷レジカゴバッグが当たるらくのうマザーズのクローズドキャンペーン",
+      "link": "https://www.cp-lp.jp/mothers-otsucafe2026/",
+      "source": "懸賞主婦",
       "method": "不明",
-      "genre": "その他",
+      "genre": "金券",
       "win_count": null,
       "prize_value": null,
       "manual_lottery": false,
-      "local": true,
+      "local": false,
       "preference_hit": false,
-      "score": 0.181,
-      "roi": 0.0181,
+      "score": 0.202,
+      "roi": 0.0202,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
       "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
       "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
       ],
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://modcp.suntory.co.jp/K2610TDY1/top/",
+        "open_url": "https://www.cp-lp.jp/mothers-otsucafe2026/",
         "action": "応募フォーム/ページを開く"
       }
     },
     {
-      "id": "fa68635b9ee1",
-      "title": "20万名様に角ハイボール〈夕どき〉のコンビニ引換クーポンが当たる大量当選LINE懸賞",
-      "link": "https://modcp.suntory.co.jp/Y2610KAK1/top/",
+      "id": "a2c0f5836f6a",
+      "title": "FenderのAmerican Professional（アメプロ）最新モデルが当たる豪華懸賞",
+      "link": "https://www.fmicassets.com/demandware/assets/japan/campaign/american-professional-quiz/index.html",
       "source": "懸賞主婦",
-      "method": "x",
-      "genre": "食品",
-      "win_count": 200000,
+      "method": "アンケート",
+      "genre": "家電",
+      "win_count": null,
       "prize_value": null,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.032,
-      "roi": 0.0158,
+      "score": 0.6,
+      "roi": 0.02,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
+      "comment_suggestions": [
+        "購入を検討していた商品で、口コミも参考にしていました。当選しましたら毎日の生活がより快適になりそうで楽しみです。",
+        "この機能が暮らしにぴったりだと感じています。当選しましたら古くなった家電の買い替えを考えていたので嬉しいです。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://www.fmicassets.com/demandware/assets/japan/campaign/american-professional-quiz/index.html",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "16f47ec326bd",
+      "title": "【X懸賞】デジタルギフト最大10,000円分が1,000名様にその場で当たる！",
+      "link": "https://kenshou.club/archives/965600",
+      "source": "懸賞CLUB（メーカー横断）",
+      "method": "x",
+      "genre": "その他",
+      "win_count": 1000,
+      "prize_value": 10000,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.03,
+      "roi": 0.0152,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
       "comment_advice": "X拡散型：自動抽選が多くコメント効果は限定的。引用RTで具体的に書くと手動抽選時に有利。",
       "comment_suggestions": [
-        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
-        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
       ],
       "sns": {
         "platform": "x",
         "label": "Xで開く（RT/フォロー）",
-        "open_url": "https://x.com/search?q=20%E4%B8%87%E5%90%8D%E6%A7%98%E3%81%AB%E8%A7%92%E3%83%8F%E3%82%A4%E3%83%9C%E3%83%BC%E3%83%AB%E3%80%88%E5%A4%95%E3%81%A9%E3%81%8D%E3%80%89%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B%E5%BC%95%E6%8F%9B%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%81%8C%E5%BD%93%E3%81%9F%E3%82%8B%E5%A4%A7%E9%87%8F%E5%BD%93%E9%81%B8LINE%E6%87%B8%E8%B3%9E&f=live",
+        "open_url": "https://x.com/search?q=%E3%80%90X%E6%87%B8%E8%B3%9E%E3%80%91%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AE%E3%83%95%E3%83%88%E6%9C%80%E5%A4%A710%2C000%E5%86%86%E5%88%86%E3%81%8C1%2C000%E5%90%8D%E6%A7%98%E3%81%AB%E3%81%9D%E3%81%AE%E5%A0%B4%E3%81%A7%E5%BD%93%E3%81%9F%E3%82%8B%EF%BC%81&f=live",
         "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
       }
     },
     {
-      "id": "5de837cc50ee",
-      "title": "【イオン北海道×明治】130名様にクリスマスケーキが当たる豪華キャンペーン",
-      "link": "https://www.aeon-hokkaido.jp/iaeonapp/campaign/meiji_2510/",
+      "id": "dab002893f35",
+      "title": "2027年霧島酒造オリジナルカレンダーが1,000名様に当たるプレゼントキャンペーン",
+      "link": "https://www.kirishima.co.jp/news/2026101901.html",
       "source": "懸賞主婦",
       "method": "不明",
       "genre": "食品",
-      "win_count": 130,
+      "win_count": 1000,
       "prize_value": null,
       "manual_lottery": false,
       "local": false,
@@ -793,14 +532,43 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://www.aeon-hokkaido.jp/iaeonapp/campaign/meiji_2510/",
+        "open_url": "https://www.kirishima.co.jp/news/2026101901.html",
         "action": "応募フォーム/ページを開く"
       }
     },
     {
-      "id": "9417e5d15c15",
-      "title": "ファミマの本気のチョコがけパン無料クーポンが当たる大量当選X懸賞",
-      "link": "https://kensho-everyday.com/archives/290024",
+      "id": "c25f9251823b",
+      "title": "【X懸賞】スマホのお布団、楽天ポイント3,000円相当を合計130名様にプレゼント",
+      "link": "https://kenshou.club/archives/965576",
+      "source": "懸賞CLUB（メーカー横断）",
+      "method": "x",
+      "genre": "その他",
+      "win_count": 130,
+      "prize_value": 3000,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.026,
+      "roi": 0.0132,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "X拡散型：自動抽選が多くコメント効果は限定的。引用RTで具体的に書くと手動抽選時に有利。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
+      ],
+      "sns": {
+        "platform": "x",
+        "label": "Xで開く（RT/フォロー）",
+        "open_url": "https://x.com/search?q=%E3%80%90X%E6%87%B8%E8%B3%9E%E3%80%91%E3%82%B9%E3%83%9E%E3%83%9B%E3%81%AE%E3%81%8A%E5%B8%83%E5%9B%A3%E3%80%81%E6%A5%BD%E5%A4%A9%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%883%2C000%E5%86%86%E7%9B%B8%E5%BD%93%E3%82%92%E5%90%88%E8%A8%88130%E5%90%8D%E6%A7%98%E3%81%AB%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88&f=live",
+        "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
+      }
+    },
+    {
+      "id": "62748484821d",
+      "title": "ジョイフルのハンバーグセットが当たる毎日応募Xキャンペーン",
+      "link": "https://kensho-everyday.com/archives/249063",
       "source": "懸賞主婦",
       "method": "x",
       "genre": "食品",
@@ -822,24 +590,24 @@
       "sns": {
         "platform": "x",
         "label": "Xで開く（RT/フォロー）",
-        "open_url": "https://x.com/search?q=%E3%83%95%E3%82%A1%E3%83%9F%E3%83%9E%E3%81%AE%E6%9C%AC%E6%B0%97%E3%81%AE%E3%83%81%E3%83%A7%E3%82%B3%E3%81%8C%E3%81%91%E3%83%91%E3%83%B3%E7%84%A1%E6%96%99%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%81%8C%E5%BD%93%E3%81%9F%E3%82%8B%E5%A4%A7%E9%87%8F%E5%BD%93%E9%81%B8X%E6%87%B8%E8%B3%9E&f=live",
+        "open_url": "https://x.com/search?q=%E3%82%B8%E3%83%A7%E3%82%A4%E3%83%95%E3%83%AB%E3%81%AE%E3%83%8F%E3%83%B3%E3%83%90%E3%83%BC%E3%82%B0%E3%82%BB%E3%83%83%E3%83%88%E3%81%8C%E5%BD%93%E3%81%9F%E3%82%8B%E6%AF%8E%E6%97%A5%E5%BF%9C%E5%8B%9FX%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3&f=live",
         "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
       }
     },
     {
-      "id": "01adfd3e9aa2",
-      "title": "【X懸賞】motorola edge 70 fusion、moto buds 2を合計101名様にプレゼント",
-      "link": "https://kenshou.club/archives/965187",
+      "id": "a92f3a9ceaa0",
+      "title": "【X懸賞】VポイントPayギフト1,000円相当を200名様にプレゼント",
+      "link": "https://kenshou.club/archives/965564",
       "source": "懸賞CLUB（メーカー横断）",
       "method": "x",
       "genre": "その他",
-      "win_count": 101,
-      "prize_value": null,
+      "win_count": 200,
+      "prize_value": 1000,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.024,
-      "roi": 0.0121,
+      "score": 0.023,
+      "roi": 0.0114,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
@@ -851,100 +619,129 @@
       "sns": {
         "platform": "x",
         "label": "Xで開く（RT/フォロー）",
-        "open_url": "https://x.com/search?q=%E3%80%90X%E6%87%B8%E8%B3%9E%E3%80%91motorola%20edge%2070%20fusion%E3%80%81moto%20buds%202%E3%82%92%E5%90%88%E8%A8%88101%E5%90%8D%E6%A7%98%E3%81%AB%E3%83%97&f=live",
+        "open_url": "https://x.com/search?q=%E3%80%90X%E6%87%B8%E8%B3%9E%E3%80%91V%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88Pay%E3%82%AE%E3%83%95%E3%83%881%2C000%E5%86%86%E7%9B%B8%E5%BD%93%E3%82%92200%E5%90%8D%E6%A7%98%E3%81%AB%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88&f=live",
         "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
       }
     },
     {
-      "id": "c89b2a943d3a",
-      "title": "「トリニティーライン Hazumie -はずみへ- エッセンスジェル T 60g」3本セットを387名様にプレゼント",
-      "link": "https://www.mystery.co.jp/pickup/04henzuq9q8gtfiq.html",
-      "source": "懸賞CLUB（メーカー横断）",
-      "method": "不明",
+      "id": "19513a1eed06",
+      "title": "毎日20名様にあさげ減塩が当たる永谷園のXキャンペーン",
+      "link": "https://kensho-everyday.com/archives/290072",
+      "source": "懸賞主婦",
+      "method": "x",
       "genre": "その他",
-      "win_count": 387,
+      "win_count": 20,
       "prize_value": null,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.121,
-      "roi": 0.0121,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://www.mystery.co.jp/pickup/04henzuq9q8gtfiq.html",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "97fc1696446e",
-      "title": "日清ヘルシークリア800g 1本＋秋色のプレート2枚セットを100名様にプレゼント",
-      "link": "https://koromogae.com/",
-      "source": "懸賞CLUB（メーカー横断）",
-      "method": "不明",
-      "genre": "その他",
-      "win_count": 100,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.111,
+      "score": 0.022,
       "roi": 0.0111,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
+      "comment_advice": "X拡散型：自動抽選が多くコメント効果は限定的。引用RTで具体的に書くと手動抽選時に有利。",
       "comment_suggestions": [
         "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
         "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
       ],
       "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://koromogae.com/",
-        "action": "応募フォーム/ページを開く"
+        "platform": "x",
+        "label": "Xで開く（RT/フォロー）",
+        "open_url": "https://x.com/search?q=%E6%AF%8E%E6%97%A520%E5%90%8D%E6%A7%98%E3%81%AB%E3%81%82%E3%81%95%E3%81%92%E6%B8%9B%E5%A1%A9%E3%81%8C%E5%BD%93%E3%81%9F%E3%82%8B%E6%B0%B8%E8%B0%B7%E5%9C%92%E3%81%AEX%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3&f=live",
+        "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
       }
     },
     {
-      "id": "78df6675a87b",
-      "title": "日用品・生活用品の無料サンプル・試供品の大量当選プレゼント",
-      "link": "https://otokuchin.com/sample-daily/",
-      "source": "お得マニア（メーカー/無料サンプル）",
-      "method": "不明",
-      "genre": "日用品",
+      "id": "9f9b3dbafeea",
+      "title": "【X懸賞】手づくりハム工房バルツバインのハムとソーセージのおまかせセットを50名様にプレゼント",
+      "link": "https://kenshou.club/archives/965624",
+      "source": "懸賞CLUB（メーカー横断）",
+      "method": "x",
+      "genre": "その他",
+      "win_count": 50,
+      "prize_value": null,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.022,
+      "roi": 0.0111,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "X拡散型：自動抽選が多くコメント効果は限定的。引用RTで具体的に書くと手動抽選時に有利。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
+      ],
+      "sns": {
+        "platform": "x",
+        "label": "Xで開く（RT/フォロー）",
+        "open_url": "https://x.com/search?q=%E3%80%90X%E6%87%B8%E8%B3%9E%E3%80%91%E6%89%8B%E3%81%A5%E3%81%8F%E3%82%8A%E3%83%8F%E3%83%A0%E5%B7%A5%E6%88%BF%E3%83%90%E3%83%AB%E3%83%84%E3%83%90%E3%82%A4%E3%83%B3%E3%81%AE%E3%83%8F%E3%83%A0%E3%81%A8%E3%82%BD%E3%83%BC%E3%82%BB%E3%83%BC%E3%82%B8%E3%81%AE%E3%81%8A%E3%81%BE%E3%81%8B%E3%81%9B%E3%82%BB%E3%83%83%E3%83%88%E3%82%9250%E5%90%8D%E6%A7%98%E3%81%AB%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88&f=live",
+        "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
+      }
+    },
+    {
+      "id": "e01bebeceb3e",
+      "title": "コクヨの「まなび」をサポートする筆記具が無料でお試しできるモニターキャンペーン",
+      "link": "https://www.mama-no-wa.jp/monitor/campusmagicfitanyliner",
+      "source": "懸賞主婦",
+      "method": "アンケート",
+      "genre": "その他",
       "win_count": null,
       "prize_value": null,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.107,
-      "roi": 0.0107,
+      "score": 0.302,
+      "roi": 0.0101,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://www.mama-no-wa.jp/monitor/campusmagicfitanyliner",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "8e60f8232a5c",
+      "title": "スタジオアリス撮影無料券も当たるママ向けキャンペーン♪",
+      "link": "https://www.studio-alice.co.jp/info/present/detail.php?id=13",
+      "source": "懸賞主婦",
+      "method": "不明",
+      "genre": "その他",
+      "win_count": null,
+      "prize_value": null,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.101,
+      "roi": 0.0101,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
       "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
       "comment_suggestions": [
-        "普段から愛用していて、品質の良さを実感しています。当選しましたら毎日の暮らしで実際に使って良さを実感したいです。",
-        "気になっていた商品なので、ぜひ試してみたいです。当選しましたら家事の時短に役立てたいです。"
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
       ],
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://otokuchin.com/sample-daily/",
+        "open_url": "https://www.studio-alice.co.jp/info/present/detail.php?id=13",
         "action": "応募フォーム/ページを開く"
       }
     },
     {
       "id": "20d1a2af0ff5",
-      "title": "ケロロ軍曹オリジナルグッズが当たるボートレース振興会のLINEキャンペーン",
+      "title": "季節のおむすび引換クーポンがその場で当たる、ほんのり屋のXキャンペーン",
       "link": "https://ac.baby-calendar.jp/aa1S88X4cX56e50d/cl/?bId=6677h607&bannerNum=10",
       "source": "懸賞主婦",
       "method": "x",
@@ -967,14 +764,14 @@
       "sns": {
         "platform": "x",
         "label": "Xで開く（RT/フォロー）",
-        "open_url": "https://x.com/search?q=%E3%82%B1%E3%83%AD%E3%83%AD%E8%BB%8D%E6%9B%B9%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%B0%E3%83%83%E3%82%BA%E3%81%8C%E5%BD%93%E3%81%9F%E3%82%8B%E3%83%9C%E3%83%BC%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E6%8C%AF%E8%88%88%E4%BC%9A%E3%81%AELINE%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3&f=live",
+        "open_url": "https://x.com/search?q=%E5%AD%A3%E7%AF%80%E3%81%AE%E3%81%8A%E3%82%80%E3%81%99%E3%81%B3%E5%BC%95%E6%8F%9B%E3%82%AF%E3%83%BC%E3%83%9D%E3%83%B3%E3%81%8C%E3%81%9D%E3%81%AE%E5%A0%B4%E3%81%A7%E5%BD%93%E3%81%9F%E3%82%8B%E3%80%81%E3%81%BB%E3%82%93%E3%81%AE%E3%82%8A%E5%B1%8B%E3%81%AEX%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%9A%E3%83%BC%E3%83%B3&f=live",
         "action": "元投稿を開き、あなたが1タップでリポスト＆フォロー"
       }
     },
     {
-      "id": "95de60f26d70",
-      "title": "アルージェの肌トラブルケアシリーズがお試しできる無料サンプルプレゼントキャンペーン",
-      "link": "https://arouge.com/topics/article.html?id=twkck6-zkz",
+      "id": "a48fd212f02f",
+      "title": "2026クリスマスコフレが当たるSPURの豪華プレゼントキャンペーン",
+      "link": "https://kensho-everyday.com/archives/289862",
       "source": "懸賞主婦",
       "method": "不明",
       "genre": "その他",
@@ -996,43 +793,14 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://arouge.com/topics/article.html?id=twkck6-zkz",
+        "open_url": "https://kensho-everyday.com/archives/289862",
         "action": "応募フォーム/ページを開く"
       }
     },
     {
-      "id": "ae166c3d31b3",
-      "title": "「ゼルダの伝説 時のオカリナ」キャンペーン賞品",
-      "link": "https://vdpro.jp/lws.nintendo56/",
-      "source": "懸賞ニュース",
-      "method": "不明",
-      "genre": "その他",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.101,
-      "roi": 0.0101,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
-        "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://vdpro.jp/lws.nintendo56/",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "0977e4c5acd3",
+      "id": "265ceeea51ef",
       "title": "レモンの日記念！レモンガス スクショチャレンジキャンペーン",
-      "link": "https://www.sinq.co.jp/",
+      "link": "https://camnavi.net/%e3%83%ac%e3%83%a2%e3%83%b3%e3%81%ae%e6%97%a5%e8%a8%98%e5%bf%b5%ef%bc%81%e3%83%ac%e3%83%a2%e3%83%b3%e3%82%ac%e3%82%b9-%e3%82%b9%e3%82%af%e3%82%b7%e3%83%a7%e3%83%81%e3%83%a3%e3%83%ac%e3%83%b3%e3%82%b8/",
       "source": "キャンなび（メーカー横断）",
       "method": "不明",
       "genre": "その他",
@@ -1054,14 +822,14 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://www.sinq.co.jp/",
+        "open_url": "https://camnavi.net/%e3%83%ac%e3%83%a2%e3%83%b3%e3%81%ae%e6%97%a5%e8%a8%98%e5%bf%b5%ef%bc%81%e3%83%ac%e3%83%a2%e3%83%b3%e3%82%ac%e3%82%b9-%e3%82%b9%e3%82%af%e3%82%b7%e3%83%a7%e3%83%81%e3%83%a3%e3%83%ac%e3%83%b3%e3%82%b8/",
         "action": "応募フォーム/ページを開く"
       }
     },
     {
-      "id": "0977e4c5acd3",
+      "id": "04b88300181c",
       "title": "さくらいふちゃん知育カレンダープレゼントキャンペーン",
-      "link": "https://www.sinq.co.jp/",
+      "link": "https://camnavi.net/%e3%81%95%e3%81%8f%e3%82%89%e3%81%84%e3%81%b5%e3%81%a1%e3%82%83%e3%82%93%e7%9f%a5%e8%82%b2%e3%82%ab%e3%83%ac%e3%83%b3%e3%83%80%e3%83%bc%e3%83%97%e3%83%ac%e3%82%bc%e3%83%b3%e3%83%88%e3%82%ad%e3%83%a3/",
       "source": "キャンなび（メーカー横断）",
       "method": "不明",
       "genre": "その他",
@@ -1083,14 +851,14 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://www.sinq.co.jp/",
+        "open_url": "https://camnavi.net/%e3%81%95%e3%81%8f%e3%82%89%e3%81%84%e3%81%b5%e3%81%a1%e3%82%83%e3%82%93%e7%9f%a5%e8%82%b2%e3%82%ab%e3%83%ac%e3%83%b3%e3%83%80%e3%83%bc%e3%83%97%e3%83%ac%e3%82%bc%e3%83%b3%e3%83%88%e3%82%ad%e3%83%a3/",
         "action": "応募フォーム/ページを開く"
       }
     },
     {
-      "id": "0977e4c5acd3",
+      "id": "e95a945148af",
       "title": "＼ Wherever, Together │ プレゼントキャンペーン ／ どこへでも、走る歓びのそばに。",
-      "link": "https://www.sinq.co.jp/",
+      "link": "https://camnavi.net/%ef%bc%bc-wherever-together-%e2%94%82-%e3%83%97%e3%83%ac%e3%82%bc%e3%83%b3%e3%83%88%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3-%ef%bc%8f-%e3%81%a9%e3%81%93%e3%81%b8%e3%81%a7%e3%82%82/",
       "source": "キャンなび（メーカー横断）",
       "method": "不明",
       "genre": "その他",
@@ -1112,14 +880,14 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://www.sinq.co.jp/",
+        "open_url": "https://camnavi.net/%ef%bc%bc-wherever-together-%e2%94%82-%e3%83%97%e3%83%ac%e3%82%bc%e3%83%b3%e3%83%88%e3%82%ad%e3%83%a3%e3%83%b3%e3%83%9a%e3%83%bc%e3%83%b3-%ef%bc%8f-%e3%81%a9%e3%81%93%e3%81%b8%e3%81%a7%e3%82%82/",
         "action": "応募フォーム/ページを開く"
       }
     },
     {
-      "id": "0977e4c5acd3",
+      "id": "15a9b77e7c26",
       "title": "＼ビューティーワールド大阪2026出展記念✨／ 「こんな美容機器が欲しい！」アイデア大募集！",
-      "link": "https://www.sinq.co.jp/",
+      "link": "https://camnavi.net/%ef%bc%bc%e3%83%93%e3%83%a5%e3%83%bc%e3%83%86%e3%82%a3%e3%83%bc%e3%83%af%e3%83%bc%e3%83%ab%e3%83%89%e5%a4%a7%e9%98%aa2026%e5%87%ba%e5%b1%95%e8%a8%98%e5%bf%b5%e2%9c%a8%ef%bc%8f-%e3%80%8c%e3%81%93/",
       "source": "キャンなび（メーカー横断）",
       "method": "不明",
       "genre": "その他",
@@ -1141,7 +909,7 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://www.sinq.co.jp/",
+        "open_url": "https://camnavi.net/%ef%bc%bc%e3%83%93%e3%83%a5%e3%83%bc%e3%83%86%e3%82%a3%e3%83%bc%e3%83%af%e3%83%bc%e3%83%ab%e3%83%89%e5%a4%a7%e9%98%aa2026%e5%87%ba%e5%b1%95%e8%a8%98%e5%bf%b5%e2%9c%a8%ef%bc%8f-%e3%80%8c%e3%81%93/",
         "action": "応募フォーム/ページを開く"
       }
     },
@@ -1233,23 +1001,110 @@
       }
     },
     {
-      "id": "82cb531305ca",
-      "title": "レコルト自動調理ポットやシマエナガグッズも当たる明治のクローズドキャンペーン",
-      "link": "https://campaign.meiji.co.jp/campaignDetail/66544998107506/3af93caa-1468-4d1b-b8b4-de581b733899",
+      "id": "953c6b2d5aeb",
+      "title": "10,000円分のこども商品券が当たるタカラトミーのクローズドキャンペーン",
+      "link": "https://www.takaratomy.co.jp/event/t2fair2026autumn/",
       "source": "懸賞主婦",
-      "method": "不明",
-      "genre": "その他",
+      "method": "クローズド",
+      "genre": "金券",
+      "win_count": null,
+      "prize_value": 10000,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 1.021,
+      "roi": 0.002,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://www.takaratomy.co.jp/event/t2fair2026autumn/",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "203fb0dcf26b",
+      "title": "1,000名様にえらべるPayが当たるエリエールのキレキラ！購入キャンペーン",
+      "link": "https://www.elleair.jp/kirekira/campaign/soujinae2026/",
+      "source": "懸賞主婦",
+      "method": "クローズド",
+      "genre": "金券",
+      "win_count": 1000,
+      "prize_value": 1000,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.92,
+      "roi": 0.0018,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://www.elleair.jp/kirekira/campaign/soujinae2026/",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "48ec81c99715",
+      "title": "INI藤牧京介オリジナル時計付きスマホスタンドやQUOカードPayが当たるミツカンのレシート懸賞",
+      "link": "https://www.mizkan.co.jp/pikon/campaign/",
+      "source": "懸賞主婦",
+      "method": "レシート",
+      "genre": "金券",
       "win_count": null,
       "prize_value": 1000,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.095,
-      "roi": 0.0095,
+      "score": 0.767,
+      "roi": 0.0015,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
+      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
+      "comment_suggestions": [
+        "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら毎日の買い物で大切に使わせていただきます。",
+        "御社の取り組みに共感しており、応援しています。当選しましたら本や日用品の購入にありがたく使います。"
+      ],
+      "sns": {
+        "platform": "web",
+        "label": "応募ページを開く",
+        "open_url": "https://www.mizkan.co.jp/pikon/campaign/",
+        "action": "応募フォーム/ページを開く"
+      }
+    },
+    {
+      "id": "bd2647175ba4",
+      "title": "【ヤオコー×ダノン】100名様にクリスマスケーキが当たるレシートキャンペーン",
+      "link": "https://www.yaoko-net.com/campaign/pdf/2610danone_info.pdf",
+      "source": "懸賞主婦",
+      "method": "レシート",
+      "genre": "その他",
+      "win_count": 100,
+      "prize_value": null,
+      "manual_lottery": false,
+      "local": false,
+      "preference_hit": false,
+      "score": 0.42,
+      "roi": 0.0008,
+      "deadline": null,
+      "status": "candidate",
+      "applied_at": null,
+      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
       "comment_suggestions": [
         "以前から関心があり、この機会にぜひ応募したいと思いました。当選しましたら生活の中で大切に活用させていただきます。",
         "御社の取り組みに共感しており、応援しています。当選しましたら前から気になっていたので試してみたいです。"
@@ -1257,53 +1112,24 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://campaign.meiji.co.jp/campaignDetail/66544998107506/3af93caa-1468-4d1b-b8b4-de581b733899",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "68c5f5d8d64c",
-      "title": "総額300万円分の選べるギフトが当たる丸大食品の豪華レシートキャンペーン",
-      "link": "https://fan.marudai.jp/dokomadeatsumeru",
-      "source": "懸賞主婦",
-      "method": "レシート",
-      "genre": "食品",
-      "win_count": null,
-      "prize_value": 3000000,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.944,
-      "roi": 0.0018,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "手選考の可能性あり：丁寧なコメント・具体的な使い道が有利。",
-      "comment_suggestions": [
-        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
-        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://fan.marudai.jp/dokomadeatsumeru",
+        "open_url": "https://www.yaoko-net.com/campaign/pdf/2610danone_info.pdf",
         "action": "応募フォーム/ページを開く"
       }
     },
     {
       "id": "97b207f0bf0f",
-      "title": "新着クローズド懸賞！毎日更新！　2026年10月21日",
+      "title": "新着クローズド懸賞！毎日更新！　2026年10月22日",
       "link": "https://tokaikensyo.com/sweepstakes/new/",
       "source": "おつかいねこの懸賞生活ブログ",
-      "method": "クローズド",
+      "method": "レシート",
       "genre": "その他",
       "win_count": null,
-      "prize_value": 3000,
+      "prize_value": null,
       "manual_lottery": false,
       "local": false,
       "preference_hit": false,
-      "score": 0.418,
-      "roi": 0.0008,
+      "score": 0.382,
+      "roi": 0.0007,
       "deadline": null,
       "status": "candidate",
       "applied_at": null,
@@ -1320,9 +1146,9 @@
       }
     },
     {
-      "id": "8522f7289f51",
-      "title": "Wチャンスもアリ！ムーミンのコラボオリジナルグッズが当たるカンロのレシート懸賞",
-      "link": "https://kanro.jp/blogs/campaign/kinmilk_moomin-cp",
+      "id": "09aed33d172c",
+      "title": "Mrs. GREEN APPLE コラボデザインボトルが当たるファンケルのレシート懸賞",
+      "link": "https://www.micre-autumn-campaign.jp/",
       "source": "懸賞主婦",
       "method": "レシート",
       "genre": "その他",
@@ -1344,7 +1170,7 @@
       "sns": {
         "platform": "web",
         "label": "応募ページを開く",
-        "open_url": "https://kanro.jp/blogs/campaign/kinmilk_moomin-cp",
+        "open_url": "https://www.micre-autumn-campaign.jp/",
         "action": "応募フォーム/ページを開く"
       }
     }
