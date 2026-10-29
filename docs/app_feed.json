@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T02:24:44.096913+00:00",
+  "generated_at": "2026-10-29T02:37:25.377635+00:00",
   "rank_by": "roi",
-  "count": 13,
+  "count": 12,
   "stats": {
     "candidate": 15,
     "applied": 1,
@@ -185,35 +185,6 @@
         "platform": "web",
         "label": "応募ページを開く",
         "open_url": "https://stamprally.org/s/45009",
-        "action": "応募フォーム/ページを開く"
-      }
-    },
-    {
-      "id": "237484d90af2",
-      "title": "宮島対岸リゾートエリア周遊スタンプラリー",
-      "link": "https://stamprally.org/s/44981",
-      "source": "日本スタンプラリー協会（景品あり多数）",
-      "method": "スタンプラリー",
-      "genre": "食品",
-      "win_count": null,
-      "prize_value": null,
-      "manual_lottery": false,
-      "local": false,
-      "preference_hit": false,
-      "score": 0.293,
-      "roi": 0.0293,
-      "deadline": null,
-      "status": "candidate",
-      "applied_at": null,
-      "comment_advice": "コメント欄があれば、具体的な応募理由と使い道を記入推奨。",
-      "comment_suggestions": [
-        "こちらのブランドの味が以前から大好きで、新作も気になっていました。当選しましたら家族みんなで食卓を囲む時間に味わいたいです。",
-        "家族みんながこのメーカーのファンです。当選しましたら週末のおうち時間のお供にしたいです。"
-      ],
-      "sns": {
-        "platform": "web",
-        "label": "応募ページを開く",
-        "open_url": "https://stamprally.org/s/44981",
         "action": "応募フォーム/ページを開く"
       }
     },
